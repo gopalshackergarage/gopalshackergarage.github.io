@@ -26,7 +26,7 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-19184293bbb0de3e5cb9.js"
+    "url": "webpack-runtime-caa0e8bbbcb4fc9fff91.js"
   },
   {
     "url": "app-10e7176732f9060b0674.js"
@@ -36,7 +36,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "853b4283bef2db98183767451f471750"
+    "revision": "98b19a561827584f192fa77045282467"
   },
   {
     "url": "component---src-pages-404-jsx.5b4218ad0d1cf3671f0f.css"
@@ -45,20 +45,20 @@ self.__precacheManifest = [
     "url": "1.d61fa877f9b2fe95c8d9.css"
   },
   {
-    "url": "0-a87f10038c1e6b2f2f06.js"
+    "url": "0-c5390940d85ec4d5ec82.js"
   },
   {
-    "url": "2-024891070c51eb934040.js"
+    "url": "2-aff23ee8461bbaac231b.js"
   },
   {
-    "url": "1-92240681af1059eddf41.js"
+    "url": "1-58a14a5817cb4d5d6b46.js"
   },
   {
-    "url": "component---src-pages-404-jsx-92bf22d170642231f67d.js"
+    "url": "component---src-pages-404-jsx-1f54216d850993cc3796.js"
   },
   {
-    "url": "static/d/644/path---404-html-516-62a-6Au7qvfisHD68FYXF5LxnuJHOk.json",
-    "revision": "ed68b25ba56d6b368fea9bc4ff1690f9"
+    "url": "static/d/962/path---404-html-516-62a-mYSNykQA95DfPGkD0BqYE0C0QM.json",
+    "revision": "02c95c42c85f1168c407f8d7e00cd617"
   },
   {
     "url": "static/d/520/path---offline-plugin-app-shell-fallback-a-30-c5a-NZuapzHg3X9TaN1iIixfv1W23E.json",
@@ -97,6 +97,24 @@ var navigationRoute = new workbox.routing.NavigationRoute(function (_ref) {
       var cacheName = workbox.core.cacheNames.precache;
       return caches.match(offlineShell, {
         cacheName: cacheName
+      }).then(function (cachedResponse) {
+        if (!cachedResponse) {
+          return fetch(offlineShell).then(function (response) {
+            if (response.ok) {
+              return caches.open(cacheName).then(function (cache) {
+                return (// Clone is needed because put() consumes the response body.
+                  cache.put(offlineShell, response.clone()).then(function () {
+                    return response;
+                  })
+                );
+              });
+            } else {
+              return fetch(event.request);
+            }
+          });
+        }
+
+        return cachedResponse;
       });
     }
 
