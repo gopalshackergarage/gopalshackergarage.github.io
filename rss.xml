@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[The Hacker Garage]]></title><description><![CDATA[My blog book]]></description><link>https://github.com/gopalshackergarage/gopalshackergarage.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 09 Dec 2018 04:53:01 GMT</lastBuildDate><item><title><![CDATA[Monads for Drunken Coders, Pint-1🍺]]></title><description><![CDATA[A chilled explanation of the Dreaded Monad]]></description><link>https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/monads-for-drunken-coders-pint-1/</link><guid isPermaLink="false">https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/monads-for-drunken-coders-pint-1/</guid><pubDate>Sun, 09 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Story of an Egg validator&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[The Hacker Garage]]></title><description><![CDATA[My blog book]]></description><link>https://github.com/gopalshackergarage/gopalshackergarage.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 09 Dec 2018 05:53:00 GMT</lastBuildDate><item><title><![CDATA[Monads for Drunken Coders, Pint-1🍺]]></title><description><![CDATA[A chilled explanation of the Dreaded Monad]]></description><link>https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/monads-for-drunken-coders-pint-1/</link><guid isPermaLink="false">https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/monads-for-drunken-coders-pint-1/</guid><pubDate>Sun, 09 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Story of an Egg validator&lt;/h2&gt;
 &lt;img class=&quot;post-gif&quot; src=&quot;https://media.giphy.com/media/4QXVm8706KgkU/giphy.gif&quot;&gt;
 &lt;h3&gt;Sol 1: One egg - One validation&lt;/h3&gt;
 &lt;p&gt;Life is so simple. Pass that one egg through that one validator. Results in good or bad.&lt;/p&gt;
@@ -56,7 +56,7 @@
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/0366946feec30eb7fa9a46da2d53a437f312baed/FirstFunctionalCode.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/FirstFunctionalCode.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
         &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8#file-firstfunctionalcode-java&quot;&gt;FirstFunctionalCode.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
@@ -70,7 +70,7 @@
 &lt;li&gt;Probably, ditch that FP, let me just use the all-friendly for-each loop to iterate through all the eggs, call validator on each egg, store bad eggs separately in a bucket as and when I find one. &lt;/li&gt;
 &lt;li&gt;Bad! I couldn’t use those Streams and Lambdas. Anyways, they are just fancy syntactic-sugar. May be next time! Let me go ahead with this if-else ladder for now. Let me take a sip! 🍺&lt;/li&gt;
 &lt;li&gt;Wait, what if I also need to know the reason why an egg is bad? &lt;/li&gt;
-&lt;li&gt;Let me use a global badEggBucketMap and put eggIndex to validation failure.&lt;/li&gt;
+&lt;li&gt;Let me use a global badEggFailureBucketMap and put eggIndex to validation failure.&lt;/li&gt;
 &lt;li&gt;But! how can I tightly map validation-failure-TO-failed-validation-method? Hmm… it’s ok to not tightly map them, I just know which failure is-to what.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Suddenly, the cute sprout turned into a tree🎋, with multiple if-else-break-continue branches of execution.&lt;/p&gt;
@@ -111,7 +111,7 @@
       &lt;/tr&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-eggvalidatorbad-java-L3&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;3&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-eggvalidatorbad-java-LC3&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;    &lt;span class=&quot;pl-k&quot;&gt;Map&amp;lt;&lt;span class=&quot;pl-smi&quot;&gt;Integer&lt;/span&gt;, &lt;span class=&quot;pl-smi&quot;&gt;ValidationFailure&lt;/span&gt;&amp;gt;&lt;/span&gt; badEggBucketMap &lt;span class=&quot;pl-k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;pl-k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;pl-k&quot;&gt;HashMap&amp;lt;&amp;gt;&lt;/span&gt;();&lt;/td&gt;
+        &lt;td id=&quot;file-eggvalidatorbad-java-LC3&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;    &lt;span class=&quot;pl-k&quot;&gt;Map&amp;lt;&lt;span class=&quot;pl-smi&quot;&gt;Integer&lt;/span&gt;, &lt;span class=&quot;pl-smi&quot;&gt;ValidationFailure&lt;/span&gt;&amp;gt;&lt;/span&gt; badEggFailureBucketMap &lt;span class=&quot;pl-k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;pl-k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;pl-k&quot;&gt;HashMap&amp;lt;&amp;gt;&lt;/span&gt;();&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-eggvalidatorbad-java-L4&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;4&quot;&gt;&lt;/td&gt;
@@ -139,7 +139,7 @@
       &lt;/tr&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-eggvalidatorbad-java-L10&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;10&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-eggvalidatorbad-java-LC10&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        invalidRequestMap&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;put(eggIndex, &lt;span class=&quot;pl-c1&quot;&gt;VALIDATION_FAILURE_1&lt;/span&gt;);&lt;/td&gt;
+        &lt;td id=&quot;file-eggvalidatorbad-java-LC10&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        badEggFailureBucketMap&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;put(eggIndex, &lt;span class=&quot;pl-c1&quot;&gt;VALIDATION_FAILURE_1&lt;/span&gt;);&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-eggvalidatorbad-java-L11&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;11&quot;&gt;&lt;/td&gt;
@@ -163,7 +163,7 @@
       &lt;/tr&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-eggvalidatorbad-java-L16&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;16&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-eggvalidatorbad-java-LC16&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;          invalidRequestMap&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;put(eggIndex, &lt;span class=&quot;pl-c1&quot;&gt;VALIDATION_FAILURE_2&lt;/span&gt;);&lt;/td&gt;
+        &lt;td id=&quot;file-eggvalidatorbad-java-LC16&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;          badEggFailureBucketMap&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;put(eggIndex, &lt;span class=&quot;pl-c1&quot;&gt;VALIDATION_FAILURE_2&lt;/span&gt;);&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-eggvalidatorbad-java-L17&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;17&quot;&gt;&lt;/td&gt;
@@ -179,7 +179,7 @@
       &lt;/tr&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-eggvalidatorbad-java-L20&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;20&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-eggvalidatorbad-java-LC20&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        invalidRequestMap&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;put(eggIndex, &lt;span class=&quot;pl-c1&quot;&gt;VALIDATION_FAILURE_WITH_EXCEPTION_2&lt;/span&gt; &lt;span class=&quot;pl-k&quot;&gt;+&lt;/span&gt; e&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;getMessage());&lt;/td&gt;
+        &lt;td id=&quot;file-eggvalidatorbad-java-LC20&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        badEggFailureBucketMap&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;put(eggIndex, &lt;span class=&quot;pl-c1&quot;&gt;VALIDATION_FAILURE_WITH_EXCEPTION_2&lt;/span&gt; &lt;span class=&quot;pl-k&quot;&gt;+&lt;/span&gt; e&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;getMessage());&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-eggvalidatorbad-java-L21&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;21&quot;&gt;&lt;/td&gt;
@@ -195,7 +195,7 @@
       &lt;/tr&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-eggvalidatorbad-java-L24&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;24&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-eggvalidatorbad-java-LC24&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;          &lt;span class=&quot;pl-smi&quot;&gt;PaymentGroup&lt;/span&gt; yellowTobeValidated &lt;span class=&quot;pl-k&quot;&gt;=&lt;/span&gt; extractYellow(eggTobeValidated);&lt;/td&gt;
+        &lt;td id=&quot;file-eggvalidatorbad-java-LC24&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;          &lt;span class=&quot;pl-smi&quot;&gt;Yellow&lt;/span&gt; yellowTobeValidated &lt;span class=&quot;pl-k&quot;&gt;=&lt;/span&gt; extractYellow(eggTobeValidated);&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-eggvalidatorbad-java-L25&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;25&quot;&gt;&lt;/td&gt;
@@ -215,7 +215,7 @@
       &lt;/tr&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-eggvalidatorbad-java-L29&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;29&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-eggvalidatorbad-java-LC29&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;                invalidRequestMap&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;put(eggIndex, &lt;span class=&quot;pl-c1&quot;&gt;VALIDATION_FAILURE_32&lt;/span&gt;);&lt;/td&gt;
+        &lt;td id=&quot;file-eggvalidatorbad-java-LC29&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;                badEggFailureBucketMap&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;put(eggIndex, &lt;span class=&quot;pl-c1&quot;&gt;VALIDATION_FAILURE_32&lt;/span&gt;);&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-eggvalidatorbad-java-L30&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;30&quot;&gt;&lt;/td&gt;
@@ -231,7 +231,7 @@
       &lt;/tr&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-eggvalidatorbad-java-L33&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;33&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-eggvalidatorbad-java-LC33&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;              invalidRequestMap&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;put(eggIndex, &lt;span class=&quot;pl-c1&quot;&gt;VALIDATION_FAILURE_WITH_EXCEPTION_32&lt;/span&gt; &lt;span class=&quot;pl-k&quot;&gt;+&lt;/span&gt; e&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;getMessage());&lt;/td&gt;
+        &lt;td id=&quot;file-eggvalidatorbad-java-LC33&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;              badEggFailureBucketMap&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;put(eggIndex, &lt;span class=&quot;pl-c1&quot;&gt;VALIDATION_FAILURE_WITH_EXCEPTION_32&lt;/span&gt; &lt;span class=&quot;pl-k&quot;&gt;+&lt;/span&gt; e&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;getMessage());&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-eggvalidatorbad-java-L34&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;34&quot;&gt;&lt;/td&gt;
@@ -251,7 +251,7 @@
       &lt;/tr&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-eggvalidatorbad-java-L38&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;38&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-eggvalidatorbad-java-LC38&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;          invalidRequestMap&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;put(eggIndex, &lt;span class=&quot;pl-c1&quot;&gt;VALIDATION_FAILURE_2&lt;/span&gt;);&lt;/td&gt;
+        &lt;td id=&quot;file-eggvalidatorbad-java-LC38&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;          badEggFailureBucketMap&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;put(eggIndex, &lt;span class=&quot;pl-c1&quot;&gt;VALIDATION_FAILURE_2&lt;/span&gt;);&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-eggvalidatorbad-java-L39&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;39&quot;&gt;&lt;/td&gt;
@@ -267,7 +267,7 @@
       &lt;/tr&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-eggvalidatorbad-java-L42&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;42&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-eggvalidatorbad-java-LC42&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        invalidRequestMap&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;put(eggIndex, &lt;span class=&quot;pl-c1&quot;&gt;VALIDATION_FAILURE_WITH_EXCEPTION&lt;/span&gt; &lt;span class=&quot;pl-k&quot;&gt;+&lt;/span&gt; e&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;getMessage());&lt;/td&gt;
+        &lt;td id=&quot;file-eggvalidatorbad-java-LC42&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        badEggFailureBucketMap&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;put(eggIndex, &lt;span class=&quot;pl-c1&quot;&gt;VALIDATION_FAILURE_WITH_EXCEPTION&lt;/span&gt; &lt;span class=&quot;pl-k&quot;&gt;+&lt;/span&gt; e&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;getMessage());&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-eggvalidatorbad-java-L43&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;43&quot;&gt;&lt;/td&gt;
@@ -303,7 +303,7 @@
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/0366946feec30eb7fa9a46da2d53a437f312baed/EggValidatorBad.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/EggValidatorBad.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
         &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8#file-eggvalidatorbad-java&quot;&gt;EggValidatorBad.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
@@ -468,7 +468,7 @@
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/0366946feec30eb7fa9a46da2d53a437f312baed/ImperativeLastWord.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/ImperativeLastWord.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
         &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8#file-imperativelastword-java&quot;&gt;ImperativeLastWord.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
@@ -562,7 +562,7 @@
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/0366946feec30eb7fa9a46da2d53a437f312baed/FunctionalLastWord.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/FunctionalLastWord.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
         &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8#file-functionallastword-java&quot;&gt;FunctionalLastWord.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
@@ -693,7 +693,7 @@
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/0366946feec30eb7fa9a46da2d53a437f312baed/PseudoValidator.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/PseudoValidator.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
         &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8#file-pseudovalidator-java&quot;&gt;PseudoValidator.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
@@ -772,7 +772,7 @@
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/0366946feec30eb7fa9a46da2d53a437f312baed/Functor.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/Functor.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
         &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8#file-functor-java&quot;&gt;Functor.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
@@ -878,7 +878,7 @@
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/0366946feec30eb7fa9a46da2d53a437f312baed/Monad.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/Monad.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
         &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8#file-monad-java&quot;&gt;Monad.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
