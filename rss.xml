@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[The Hacker Garage]]></title><description><![CDATA[My blog book]]></description><link>https://github.com/gopalshackergarage/gopalshackergarage.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 09 Dec 2018 04:11:10 GMT</lastBuildDate><item><title><![CDATA[Monads for Drunken Coders, Pint-1🍺]]></title><description><![CDATA[A chilled explanation of the Dreaded Monad]]></description><link>https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/monads-for-drunken-coders-pint-1/</link><guid isPermaLink="false">https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/monads-for-drunken-coders-pint-1/</guid><pubDate>Sun, 09 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Story of an Egg validator&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[The Hacker Garage]]></title><description><![CDATA[My blog book]]></description><link>https://github.com/gopalshackergarage/gopalshackergarage.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 09 Dec 2018 04:38:15 GMT</lastBuildDate><item><title><![CDATA[Monads for Drunken Coders, Pint-1🍺]]></title><description><![CDATA[A chilled explanation of the Dreaded Monad]]></description><link>https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/monads-for-drunken-coders-pint-1/</link><guid isPermaLink="false">https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/monads-for-drunken-coders-pint-1/</guid><pubDate>Sun, 09 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Story of an Egg validator&lt;/h2&gt;
 &lt;img class=&quot;post-gif&quot; src=&quot;https://media.giphy.com/media/4QXVm8706KgkU/giphy.gif&quot;&gt;
 &lt;h3&gt;Sol 1: One egg - One validation&lt;/h3&gt;
 &lt;p&gt;Life is so simple. Pass that one egg through that one validator. Results in good or bad.&lt;/p&gt;
 &lt;h3&gt;Sol 23: Many eggs - One validation&lt;/h3&gt;
 &lt;p&gt;Not difficult at all, simply pass them through validator, one after the other and collect the results for each one, in order. With simple if-else condition, this code looks like a Cute Sprout! 🌱&lt;/p&gt;
 &lt;h3&gt;Sol 97: Many eggs - Many validations&lt;/h3&gt;
-&lt;p&gt;Why do I sense climate’s getting a bit hotter. Ok, still no problem. I just nest all those validators one-inside-another. Each of them just pass the good ones ahead and discard bad ones.&lt;/p&gt;
+&lt;p&gt;Why do I sense climate’s getting a bit hotter. Ok, still no problem, I know Java 8. Let me write a pipe of filter functions. Each of them just pass the good ones ahead and discard bad ones.&lt;/p&gt;
 &lt;p&gt;&lt;div id=&quot;gist93453042&quot; class=&quot;gist&quot;&gt;
     &lt;div class=&quot;gist-file&quot;&gt;
       &lt;div class=&quot;gist-data&quot;&gt;
@@ -73,20 +73,18 @@
 &lt;li&gt;Let me use a global badEggBucketMap and put eggIndex to validation failure.&lt;/li&gt;
 &lt;li&gt;But! how can I tightly map validation-failure-TO-failed-validation-method? Hmm… it’s ok to not tightly map them, I just know which failure is-to what.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Suddenly, the cute sprout turned into a giant bush🎋, with multiple if-else-break-continue branches of execution.&lt;/p&gt;
+&lt;p&gt;Suddenly, the cute sprout turned into a tree🎋, with multiple if-else-break-continue branches of execution.&lt;/p&gt;
 &lt;h3&gt;Sol 179: Many Types of eggs - Many validations&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Seriously, how many validators should I write? One per every egg type? Repeat this entire algo for each and every type, just changing the parameter types!?&lt;/li&gt;
 &lt;li&gt;Also, there can be some &lt;strong&gt;exceptional&lt;/strong&gt; eggs, that blow-off while going through the validator, how am I supposed to deal with all those exceptions?&lt;/li&gt;
 &lt;li&gt;How am I gonna jenga new validations in the middle of this chaos!?&lt;/li&gt;
 &lt;li&gt;By the way, notice, I kept mutating egg list while iterating, removing bad ones. It’s totally confusing to reason-out, how is the state changing. &lt;/li&gt;
-&lt;li&gt;Now, don’t ask me to add inter-dependent validations. If they throw exceptions as well, the if-else-try-catch nest is going out of my monitor.&lt;/li&gt;
-&lt;li&gt;Again, don’t ask me to unit test this shit!&lt;/li&gt;
+&lt;li&gt;Now, don’t ask me to add inter-dependent validations. If they throw exceptions as well, the if-else-try-catch nest crosses all margins and overflows out of my screen.&lt;/li&gt;
+&lt;li&gt;Again, don’t ask me to unit-test this shit!&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Sol 237: Many Types of eggs - Many more validations in parallel&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;I think, I’m too drunk. My head is spinning! 🤯&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;I think, I’m too drunk. My head is spinning! 🤯&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This design pattern has a name and it’s called the “Evolution-of-a-Problem-Over-Time”.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -317,7 +315,7 @@
 &lt;li&gt;If a right Paradigm isn’t chosen, you literally have to stab and cut-open the Open-Closed principle every time you get a new requirement. &lt;/li&gt;
 &lt;li&gt;Every Software architectural problem can be seen like a block of objects doing functions or functions doing (I mean, processing) objects. There you go! I just metaphored OOPs vs FP.&lt;/li&gt;
 &lt;li&gt;Eggs aren’t doing anything here, they are being done. This clearly is a Functional programming problem. Eggs should not be juggled around validation functions, but validations should be &lt;em&gt;applied&lt;/em&gt; on eggs.&lt;/li&gt;
-&lt;li&gt;People who feel everything can be solved with OOPs, I ask this question. In OOPs, we build classes with state and have functions exposed to operate on that state. How can you build a class which lets you provide functions dynamically at run time, to operate on its state. This is fundamental premises on which Functional style is built.&lt;/li&gt;
+&lt;li&gt;In OOPs, we build classes with state and have functions exposed to operate on that state. How can you build a class which lets you provide functions dynamically at run time, to operate on its state. This is fundamental premises on which Functional style is built.&lt;/li&gt;
 &lt;li&gt;Of-course, Functional thinking doesn’t solve all the problems, neither is Object oriented thinking. However, in this problem FP is not fighting with OOPs, but with &lt;strong&gt;Imperative Programming&lt;/strong&gt;.&lt;/li&gt;
 &lt;li&gt;Our friend here is clearly suffering from trying to do too much of administration, dealing with the eggs.&lt;/li&gt;
 &lt;li&gt;Like any other problem, this too has multiple sub-problems.&lt;/li&gt;
@@ -341,6 +339,7 @@
 &lt;li&gt;But there is one Octopus function administrating all these function calls, which in itself is a monster. State being pin-balled among imperative control statements, function calls and try-catches, is a horror show, when trying to reason-out the code flow or debug it.
 &lt;img class=&quot;post-gif&quot; src=&quot;https://media.giphy.com/media/l0HlHJGHe3yAMhdQY/giphy.gif&quot;&gt;&lt;/li&gt;
 &lt;li&gt;In our problem, it is even trying to handle the coupling between Validation method and Validation failure. That surely is not its responsibility. Validation method should be responsible to communicate that to the orchestrator.&lt;/li&gt;
+&lt;li&gt;This simple function is just trying to append all last-words in List of Strings with &lt;code class=&quot;language-text&quot;&gt;&amp;amp;&lt;/code&gt;, with a lot of do-this-do-that imperative administration. It might be clear to the computer, but not very intuitive to another developer (or the same dev after sometime). &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;div id=&quot;gist93453042&quot; class=&quot;gist&quot;&gt;
     &lt;div class=&quot;gist-file&quot;&gt;
@@ -477,16 +476,16 @@
 &lt;/div&gt;
 &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;This simple function is just trying to append all last-words in List of Strings with &lt;code class=&quot;language-text&quot;&gt;&amp;amp;&lt;/code&gt;, with a lot of do-this-do-that imperative administration. It might be clear to the computer, but not very intuitive to another developer (or the same dev after sometime). &lt;/li&gt;
 &lt;li&gt;Imagine how complicated it becomes, if we require more conditions and exception handling.&lt;/li&gt;
 &lt;li&gt;In the age of Java 8, I can say this developer is trying too hard, using low-level stuff like dry if-else and for-each.&lt;/li&gt;
-&lt;li&gt;He is taking too much of control over iterating and filtering stuff, and as Uncle Ben says, &lt;strong&gt;With Power comes great Responsibility&lt;/strong&gt;. &lt;/li&gt;
+&lt;li&gt;He is taking too much of control over iterating and filtering stuff, and as Uncle Ben says, &lt;strong&gt;With great Power comes great Responsibility&lt;/strong&gt;.
+&lt;img class=&quot;post-gif&quot; src=&quot;https://media.giphy.com/media/10KIsXhwdoerHW/giphy.gif&quot;&gt;&lt;/li&gt;
 &lt;li&gt;You sure don’t have to take this responsibility. Pass that to the Collections library itself, they know how to iterate and filter and much more. Just pass them the &lt;strong&gt;Criteria&lt;/strong&gt;.&lt;/li&gt;
 &lt;li&gt;If you get too serious into functional programming, you shall think twice every-time before writing any for-loop or if-else condition. (But don’t take it too serious 😉, for-loops are good for small iterations).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Behead the Octopus, Lego the Focussed Functions&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;State should always march &lt;strong&gt;Unidirectional&lt;/strong&gt;, like an army of zombies.
+&lt;li&gt;State should always march &lt;strong&gt;Unidirectional&lt;/strong&gt;, like an unstoppable army of zombies.
 &lt;img class=&quot;post-gif&quot; src=&quot;https://media.giphy.com/media/V3zHRAZGp7Qo8/giphy.gif&quot;&gt;&lt;/li&gt;
 &lt;li&gt;I ain’t copying this from the Flux guys at Facebook. This is seen ever since there are pipes in Unix, since 1978.&lt;/li&gt;
 &lt;li&gt;Simply, make the shit of a function be the food for another.&lt;/li&gt;
@@ -571,7 +570,7 @@
 &lt;/div&gt;
 &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;This might not be familiar for many Java devs, but sure is more readable, even for someone unfamiliar with code, if feels like reading an English sentence. &lt;strong&gt;Familiarity is different from readability&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;This might not be familiar for many Java devs, but sure is more readable, even for someone unfamiliar with code, if feels like reading an English sentence. &lt;strong&gt;Familiarity is different from Readability&lt;/strong&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Separation of Concerns&lt;/strong&gt; made it clear and concise, like an SQL Query.&lt;/li&gt;
 &lt;li&gt;This way functions can be fitted into each other to create a smooth pipeline, aiding unidirectional flow of data. &lt;/li&gt;
 &lt;li&gt;This is flexible to restructure, and it’s easy to hire and fire these criterion functions, without thinking too much.
@@ -583,8 +582,8 @@
 &lt;li&gt;Unidirectional flow demands uniform data structure for the entire stream-per-step. A pipeline can have different types of stream, but how can a stream/collection have different data types?
 &lt;img class=&quot;post-gif&quot; src=&quot;https://media.giphy.com/media/OeX0obPwKJ0OI/giphy.gif&quot;&gt;&lt;/li&gt;
 &lt;li&gt;Flowing through a function, Data inside a stream/collection of one type can metamorphose into various life forms of all shapes and sizes as it comes out, may be due to invalidations or exceptions or some eggs hatch into chickens or dinosaurs or your database just gets struck by a lightning.&lt;/li&gt;
-&lt;li&gt;The dichotomy of Data metamorphism with Stream Uniformity can be seen in our current problem, where we have two categories of data, Good eggs and Bad eggs. &lt;/li&gt;
-&lt;li&gt;But who needs bad eggs, what you really interested are, the Validation failures for bad eggs. &lt;/li&gt;
+&lt;li&gt;The dichotomy of Data metamorphism with Stream Uniformity can be seen in our current problem. &lt;/li&gt;
+&lt;li&gt;We have two categories of data, Good eggs and Bad eggs. But who needs bad eggs, what you really interested are, the Validation failures for bad eggs. &lt;/li&gt;
 &lt;li&gt;So two categories here, demand two totally disparate data types (Good-eggs), (Validation-failures due to (invalidations) and (exceptions)) to co-exist, inside a stream, as they flow through the pipeline. Check-out cases in this pseudo code:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;div id=&quot;gist93453042&quot; class=&quot;gist&quot;&gt;
@@ -703,7 +702,7 @@
 &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;This poor function is trying to validate, but is not sure how to communicate back to its caller with multiple possibilities. Unfortunately, Strongly-typed languages are strict about return type.&lt;/li&gt;
-&lt;li&gt;Had it been a Dynamically-typed-language, this is not a problem at all. This is one of the reasons why Dynamically typed languages got popular for. Of-course, that makes them very difficult to debug. It’s difficult to build even a proper IDE around them.&lt;/li&gt;
+&lt;li&gt;Had it been a Dynamically-typed-language like Javascript, this is not a problem at all. This is one of the reasons why Dynamically typed languages got popular for. Of-course, that makes them very difficult to debug. It’s difficult to build even a proper IDE around them.&lt;/li&gt;
 &lt;li&gt;The solution for this in a Strongly-typed-language like Java is &lt;strong&gt;Data Containerization&lt;/strong&gt;. &lt;/li&gt;
 &lt;li&gt;Not those plain-old-java-wrappers, but &lt;strong&gt;Containers&lt;/strong&gt;. Ship your heterogeneous data inside these containers. &lt;/li&gt;
 &lt;/ul&gt;
@@ -900,7 +899,7 @@
 &lt;h3&gt;Problems.split().stream()&lt;br/&gt;.map(problem -&gt; solve(problem))&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;You would have got a hint by now. Monads are the data containers you need. The problem is solved by one container-type (which can be the unit for uniformity through-out the pipeline) and a variable-value-type contained inside (which can be morphed from type to type).&lt;/li&gt;
-&lt;li&gt;Now every function can speak the same language, by passing around these Monad boxes and operate on them with functions, without caring much about what’s inside the box. Uniform boxes with Heterogenous data.&lt;/li&gt;
+&lt;li&gt;Now every function can speak the same language, by passing around these Monad boxes and operate on them with functions, without worrying much about what it contains. Uniform boxes with Heterogenous data.&lt;/li&gt;
 &lt;li&gt;Like, validation functions can ship either a goodEgg or a validation failure to the orchestration function, and it doesn’t even care what’s in the box. Now, Orchestrator only has one job to do, just pump the data inside the pipeline ahead.&lt;/li&gt;
 &lt;li&gt;Plus, you just got something for free, &lt;strong&gt;Context Abstraction&lt;/strong&gt;. Notice, the algo depends on the Monad type and not the parameter type contained in it. Wow! an epiphany!!
 &lt;img class=&quot;post-gif&quot; src=&quot;https://media.giphy.com/media/7nfYQYbqxOao8/giphy.gif&quot;&gt;&lt;/li&gt;
