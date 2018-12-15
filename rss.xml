@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[The Hacker Garage]]></title><description><![CDATA[So excited about this Craft that, I can't keep myself from blogging about it.]]></description><link>https://github.com/gopalshackergarage/gopalshackergarage.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 11 Dec 2018 15:45:21 GMT</lastBuildDate><item><title><![CDATA[Monads for Drunken Coders, Pint-1🍺]]></title><description><![CDATA[A chilled explanation of the Dreaded Monad]]></description><link>https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/monads-for-drunken-coders-pint-1/</link><guid isPermaLink="false">https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/monads-for-drunken-coders-pint-1/</guid><pubDate>Sun, 09 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Story of an Egg validator&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[The Hacker Garage]]></title><description><![CDATA[So excited about this Craft that, I can't keep myself from blogging about it.]]></description><link>https://github.com/gopalshackergarage/gopalshackergarage.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 15 Dec 2018 06:22:56 GMT</lastBuildDate><item><title><![CDATA[Monads for Drunken Coders, Pint-1🍺]]></title><description><![CDATA[A chilled introduction to the Dreaded Monad, using Java 8]]></description><link>https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/monads-for-drunken-coders-pint-1/</link><guid isPermaLink="false">https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/monads-for-drunken-coders-pint-1/</guid><pubDate>Sun, 09 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Story of an Egg validator&lt;/h2&gt;
 &lt;img class=&quot;post-gif&quot; src=&quot;https://media.giphy.com/media/4QXVm8706KgkU/giphy.gif&quot;&gt;
 &lt;h3&gt;Sol 1: One egg - One validation&lt;/h3&gt;
 &lt;p&gt;Life is so simple. Pass that one egg through that one validator. Results in good or bad.&lt;/p&gt;
@@ -15,8 +15,6 @@
 
   &lt;div itemprop=&quot;text&quot; class=&quot;blob-wrapper data type-java &quot;&gt;
       
-
-
 &lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot;&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-firstfunctionalcode-java-L1&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;1&quot;&gt;&lt;/td&gt;
@@ -98,8 +96,6 @@
 
   &lt;div itemprop=&quot;text&quot; class=&quot;blob-wrapper data type-java &quot;&gt;
       
-
-
 &lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot;&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-eggvalidatorbad-java-L1&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;1&quot;&gt;&lt;/td&gt;
@@ -350,8 +346,6 @@
 
   &lt;div itemprop=&quot;text&quot; class=&quot;blob-wrapper data type-java &quot;&gt;
       
-
-
 &lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot;&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-imperativelastword-java-L1&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;1&quot;&gt;&lt;/td&gt;
@@ -500,8 +494,6 @@
 
   &lt;div itemprop=&quot;text&quot; class=&quot;blob-wrapper data type-java &quot;&gt;
       
-
-
 &lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot;&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-functionallastword-java-L1&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;1&quot;&gt;&lt;/td&gt;
@@ -595,8 +587,6 @@
 
   &lt;div itemprop=&quot;text&quot; class=&quot;blob-wrapper data type-java &quot;&gt;
       
-
-
 &lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot;&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-pseudovalidator-java-L1&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;1&quot;&gt;&lt;/td&gt;
@@ -703,7 +693,9 @@
 &lt;ul&gt;
 &lt;li&gt;This poor function is trying to validate, but is not sure how to communicate back to its caller with multiple possibilities. Unfortunately, Strongly-typed languages are strict about return type.&lt;/li&gt;
 &lt;li&gt;Had it been a Dynamically-typed-language like Javascript, this is not a problem at all. This is one of the reasons why Dynamically typed languages got popular for. Of-course, that makes them very difficult to debug. It’s difficult to build even a proper IDE around them.&lt;/li&gt;
-&lt;li&gt;The solution for this in a Strongly-typed-language like Java is &lt;strong&gt;Data Containerization&lt;/strong&gt;. &lt;/li&gt;
+&lt;li&gt;A dirty solution in a Strongly-typed-language like Java can be, have some Enum &lt;code class=&quot;language-text&quot;&gt;ValidationFailureType&lt;/code&gt; as the return type which has all failure types listed, and in all these cases just return that specific failure accordingly. &lt;/li&gt;
+&lt;li&gt;But you got to return a &lt;code class=&quot;language-text&quot;&gt;null&lt;/code&gt; in valid case and you know what happens if caller doesn’t know about that. A blast of NPE!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data Containerization&lt;/strong&gt; solves this. &lt;/li&gt;
 &lt;li&gt;Not those plain-old-java-wrappers, but &lt;strong&gt;Containers&lt;/strong&gt;. Ship your heterogeneous data inside these containers. &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Let’s take a fork here and visit the Monad-Land to understand Containerization.&lt;/p&gt;
@@ -723,8 +715,6 @@
 
   &lt;div itemprop=&quot;text&quot; class=&quot;blob-wrapper data type-java &quot;&gt;
       
-
-
 &lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot;&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-functor-java-L1&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;1&quot;&gt;&lt;/td&gt;
@@ -817,8 +807,6 @@
 
   &lt;div itemprop=&quot;text&quot; class=&quot;blob-wrapper data type-java &quot;&gt;
       
-
-
 &lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot;&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-monad-java-L1&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;1&quot;&gt;&lt;/td&gt;
@@ -1102,8 +1090,6 @@ For example, if we have to design a system that deals with &lt;strong&gt;People&
 
   &lt;div itemprop=&quot;text&quot; class=&quot;blob-wrapper data type-java &quot;&gt;
       
-
-
 &lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot;&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-firstclassfunction-java-L1&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;1&quot;&gt;&lt;/td&gt;
@@ -1156,8 +1142,6 @@ For example, if we have to design a system that deals with &lt;strong&gt;People&
 
   &lt;div itemprop=&quot;text&quot; class=&quot;blob-wrapper data type-java &quot;&gt;
       
-
-
 &lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot;&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-functionalinterface-java-L1&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;1&quot;&gt;&lt;/td&gt;
@@ -1259,8 +1243,6 @@ For example, if we have to design a system that deals with &lt;strong&gt;People&
 
   &lt;div itemprop=&quot;text&quot; class=&quot;blob-wrapper data type-java &quot;&gt;
       
-
-
 &lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot;&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-lazystream-java-L1&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;1&quot;&gt;&lt;/td&gt;
@@ -1350,8 +1332,6 @@ For example, if we have to design a system that deals with &lt;strong&gt;People&
 
   &lt;div itemprop=&quot;text&quot; class=&quot;blob-wrapper data type-java &quot;&gt;
       
-
-
 &lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot;&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-supplier-java-L1&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;1&quot;&gt;&lt;/td&gt;
@@ -1392,8 +1372,6 @@ For example, if we have to design a system that deals with &lt;strong&gt;People&
 
   &lt;div itemprop=&quot;text&quot; class=&quot;blob-wrapper data type-java &quot;&gt;
       
-
-
 &lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot;&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-supplier-java-L1&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;1&quot;&gt;&lt;/td&gt;
@@ -1433,8 +1411,6 @@ For example, if we have to design a system that deals with &lt;strong&gt;People&
 
   &lt;div itemprop=&quot;text&quot; class=&quot;blob-wrapper data type-java &quot;&gt;
       
-
-
 &lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot;&gt;
       &lt;tr&gt;
         &lt;td id=&quot;file-infinitestream-java-L1&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;1&quot;&gt;&lt;/td&gt;
