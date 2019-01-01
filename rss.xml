@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[The Hacker Garage]]></title><description><![CDATA[So excited about this Craft that, I can't keep myself from blogging about it.]]></description><link>https://github.com/gopalshackergarage/gopalshackergarage.github.io</link><generator>RSS for Node</generator><lastBuildDate>Mon, 31 Dec 2018 06:33:29 GMT</lastBuildDate><item><title><![CDATA[Monads for Drunken Coders, Pint-1🍺]]></title><description><![CDATA[A chilled introduction to the Dreaded Monad, using Java 8]]></description><link>https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/monads-for-drunken-coders-pint-1/</link><guid isPermaLink="false">https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/monads-for-drunken-coders-pint-1/</guid><pubDate>Sun, 09 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Story of an Egg validator&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[It's All Over FS]]></title><description><![CDATA[So excited about this Craft that, I can't keep myself from blogging about it.]]></description><link>https://github.com/overfullstack/overfullstack.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 01 Jan 2019 00:35:49 GMT</lastBuildDate><item><title><![CDATA[Monads for Drunken Coders, Pint-1🍺]]></title><description><![CDATA[A chilled introduction to the Dreaded Monad, using Java 8]]></description><link>https://github.com/overfullstack/overfullstack.github.io/posts/monads-for-drunken-coders-pint-1/</link><guid isPermaLink="false">https://github.com/overfullstack/overfullstack.github.io/posts/monads-for-drunken-coders-pint-1/</guid><pubDate>Sun, 09 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Story of an Egg validator&lt;/h2&gt;
 &lt;img class=&quot;post-gif&quot; src=&quot;https://media.giphy.com/media/4QXVm8706KgkU/giphy.gif&quot;&gt;
 &lt;h3&gt;Sol 1: One egg - One validation&lt;/h3&gt;
 &lt;p&gt;Life is so simple. Pass that one egg through that one validator. Results in good or bad.&lt;/p&gt;
@@ -54,8 +54,8 @@
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/FirstFunctionalCode.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8#file-firstfunctionalcode-java&quot;&gt;FirstFunctionalCode.java&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/FirstFunctionalCode.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/7777085ba07fb61268bc507dfa9e5df8#file-firstfunctionalcode-java&quot;&gt;FirstFunctionalCode.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -299,8 +299,8 @@
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/EggValidatorBad.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8#file-eggvalidatorbad-java&quot;&gt;EggValidatorBad.java&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/EggValidatorBad.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/7777085ba07fb61268bc507dfa9e5df8#file-eggvalidatorbad-java&quot;&gt;EggValidatorBad.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -462,8 +462,8 @@
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/ImperativeLastWord.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8#file-imperativelastword-java&quot;&gt;ImperativeLastWord.java&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/ImperativeLastWord.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/7777085ba07fb61268bc507dfa9e5df8#file-imperativelastword-java&quot;&gt;ImperativeLastWord.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -554,8 +554,8 @@
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/FunctionalLastWord.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8#file-functionallastword-java&quot;&gt;FunctionalLastWord.java&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/FunctionalLastWord.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/7777085ba07fb61268bc507dfa9e5df8#file-functionallastword-java&quot;&gt;FunctionalLastWord.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -683,8 +683,8 @@
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/PseudoValidator.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8#file-pseudovalidator-java&quot;&gt;PseudoValidator.java&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/PseudoValidator.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/7777085ba07fb61268bc507dfa9e5df8#file-pseudovalidator-java&quot;&gt;PseudoValidator.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -763,8 +763,8 @@
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/Functor.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8#file-functor-java&quot;&gt;Functor.java&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/Functor.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/7777085ba07fb61268bc507dfa9e5df8#file-functor-java&quot;&gt;Functor.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -867,8 +867,8 @@
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/Monad.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/7777085ba07fb61268bc507dfa9e5df8#file-monad-java&quot;&gt;Monad.java&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/7777085ba07fb61268bc507dfa9e5df8/raw/6df3509a44fd789a4a7dd4c5c98cd0d3f5c79c51/Monad.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/7777085ba07fb61268bc507dfa9e5df8#file-monad-java&quot;&gt;Monad.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -903,7 +903,7 @@
 &lt;/ul&gt;
 &lt;p&gt;Wanna see how the entire pipeline works seamlessly with the Monad, even with some exceptional eggs blown in-between?
 The sequel brings-in some new names like Immutability, Parallelism, Memoization and X-Men evolution (Just kidding!)&lt;/p&gt;
-&lt;p&gt;Let’s cook a Monad.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Functional Terminology ⨐]]></title><description><![CDATA[Speak Functional language fluently]]></description><link>https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/functional-terminology/</link><guid isPermaLink="false">https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/functional-terminology/</guid><pubDate>Fri, 07 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Pure Functions&lt;/h2&gt;
+&lt;p&gt;Let’s cook a Monad.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Functional Terminology ⨐]]></title><description><![CDATA[Speak Functional language fluently]]></description><link>https://github.com/overfullstack/overfullstack.github.io/posts/functional-terminology/</link><guid isPermaLink="false">https://github.com/overfullstack/overfullstack.github.io/posts/functional-terminology/</guid><pubDate>Fri, 07 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Pure Functions&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;These return a value based on what is passed in to the function.&lt;/li&gt;
 &lt;li&gt;For instance, if we pass x into a function as input we will get F of x out as output. &lt;/li&gt;
@@ -945,7 +945,7 @@ The sequel brings-in some new names like Immutability, Parallelism, Memoization 
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;Optional&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;flatMap&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;addOne&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;flatMap&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;addTwo&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Optional&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;flatMap&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;addThree&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;collect()&lt;/code&gt; method is called &lt;strong&gt;fold&lt;/strong&gt; in FP terms, which summarizes bunch of values into one.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Pocket Design Patterns 📋]]></title><description><![CDATA[All the popular Design Patterns abridged for quick revision, along with some tidbits.]]></description><link>https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/pocket-design-patterns/</link><guid isPermaLink="false">https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/pocket-design-patterns/</guid><pubDate>Sat, 14 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;All the popular Design Patterns abridged for quick revision, along with some tidbits.&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Pocket Design Patterns 📋]]></title><description><![CDATA[All the popular Design Patterns abridged for quick revision, along with some tidbits.]]></description><link>https://github.com/overfullstack/overfullstack.github.io/posts/pocket-design-patterns/</link><guid isPermaLink="false">https://github.com/overfullstack/overfullstack.github.io/posts/pocket-design-patterns/</guid><pubDate>Sat, 14 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;All the popular Design Patterns abridged for quick revision, along with some tidbits.&lt;/p&gt;
 &lt;h2&gt;Creational Patterns&lt;/h2&gt;
 &lt;h3&gt;Factory method Vs Abstract Factory&lt;/h3&gt;
 &lt;ul&gt;
@@ -1068,7 +1068,7 @@ station&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;ul&gt;
 &lt;li&gt;View and Controller together implement &lt;em&gt;Strategy Pattern&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;View depends on controller for user actions, so view behavior depends on Controller. Now, this controller can be easily replaced with another to change behavior.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Kung fu Lambda ƛ]]></title><description><![CDATA[Fun in Functional Programming with Java 8 and how it is competing with younger functional languages.]]></description><link>https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/functional-programming-with-java-8/</link><guid isPermaLink="false">https://github.com/gopalshackergarage/gopalshackergarage.github.io/posts/functional-programming-with-java-8/</guid><pubDate>Wed, 26 Oct 2016 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Fun in Functional Programming with Java 8 and how it is competing with younger functional languages.&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Kung fu Lambda ƛ]]></title><description><![CDATA[Fun in Functional Programming with Java 8 and how it is competing with younger functional languages.]]></description><link>https://github.com/overfullstack/overfullstack.github.io/posts/functional-programming-with-java-8/</link><guid isPermaLink="false">https://github.com/overfullstack/overfullstack.github.io/posts/functional-programming-with-java-8/</guid><pubDate>Wed, 26 Oct 2016 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Fun in Functional Programming with Java 8 and how it is competing with younger functional languages.&lt;/p&gt;
 &lt;h3&gt;FP vs OOP Simply:&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Whenever I write some code to deal with data about an entity, then functional programming seems to work best.&lt;/li&gt;
@@ -1118,8 +1118,8 @@ For example, if we have to design a system that deals with &lt;strong&gt;People&
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/FirstClassFunction.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/d5809d7bf15d7e1a34c289f9b2ff6522#file-firstclassfunction-java&quot;&gt;FirstClassFunction.java&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/FirstClassFunction.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522#file-firstclassfunction-java&quot;&gt;FirstClassFunction.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -1211,8 +1211,8 @@ For example, if we have to design a system that deals with &lt;strong&gt;People&
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/FunctionalInterface.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/d5809d7bf15d7e1a34c289f9b2ff6522#file-functionalinterface-java&quot;&gt;FunctionalInterface.java&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/FunctionalInterface.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522#file-functionalinterface-java&quot;&gt;FunctionalInterface.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -1312,8 +1312,8 @@ For example, if we have to design a system that deals with &lt;strong&gt;People&
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/LazyStream.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/d5809d7bf15d7e1a34c289f9b2ff6522#file-lazystream-java&quot;&gt;LazyStream.java&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/LazyStream.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522#file-lazystream-java&quot;&gt;LazyStream.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -1352,8 +1352,8 @@ For example, if we have to design a system that deals with &lt;strong&gt;People&
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/Supplier.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/d5809d7bf15d7e1a34c289f9b2ff6522#file-supplier-java&quot;&gt;Supplier.java&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/Supplier.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522#file-supplier-java&quot;&gt;Supplier.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -1392,8 +1392,8 @@ For example, if we have to design a system that deals with &lt;strong&gt;People&
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/Supplier.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/d5809d7bf15d7e1a34c289f9b2ff6522#file-supplier-java&quot;&gt;Supplier.java&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/Supplier.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522#file-supplier-java&quot;&gt;Supplier.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -1431,8 +1431,8 @@ For example, if we have to design a system that deals with &lt;strong&gt;People&
 
       &lt;/div&gt;
       &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/InfiniteStream.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
-        &lt;a href=&quot;https://gist.github.com/gopalshackergarage/d5809d7bf15d7e1a34c289f9b2ff6522#file-infinitestream-java&quot;&gt;InfiniteStream.java&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/InfiniteStream.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
+        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522#file-infinitestream-java&quot;&gt;InfiniteStream.java&lt;/a&gt;
         hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
