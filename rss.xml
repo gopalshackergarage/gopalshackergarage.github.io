@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[It's All Over full-stack]]></title><description><![CDATA[So excited about this Craft that, I can't keep myself from blogging about it.]]></description><link>https://github.com/overfullstack/overfullstack.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 05 Jan 2019 19:56:31 GMT</lastBuildDate><item><title><![CDATA[Monads for Drunken Coders, Pint-1🍺]]></title><description><![CDATA[A chilled introduction to the Dreaded Monad, using Java 8]]></description><link>https://github.com/overfullstack/overfullstack.github.io/posts/monads-for-drunken-coders-pint-1/</link><guid isPermaLink="false">https://github.com/overfullstack/overfullstack.github.io/posts/monads-for-drunken-coders-pint-1/</guid><pubDate>Sun, 09 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;story-of-an-egg-validator&quot;&gt;&lt;a href=&quot;#story-of-an-egg-validator&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Story of an Egg validator&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[It's All Over full-stack]]></title><description><![CDATA[So excited about this Craft that, I can't keep myself from blogging about it.]]></description><link>https://github.com/overfullstack/overfullstack.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 06 Jan 2019 04:05:08 GMT</lastBuildDate><item><title><![CDATA[Monads for Drunken Coders, Pint-1🍺]]></title><description><![CDATA[A chilled introduction to the Dreaded Monad, using Java 8]]></description><link>https://github.com/overfullstack/overfullstack.github.io/posts/monads-for-drunken-coders-pint-1/</link><guid isPermaLink="false">https://github.com/overfullstack/overfullstack.github.io/posts/monads-for-drunken-coders-pint-1/</guid><pubDate>Sun, 09 Dec 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;story-of-an-egg-validator&quot;&gt;&lt;a href=&quot;#story-of-an-egg-validator&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Story of an Egg validator&lt;/h2&gt;
 &lt;img class=&quot;post-gif&quot; src=&quot;/introduction-b2c89a7565e61c3741033785cc85bf29.gif&quot;&gt;
 &lt;h3 id=&quot;sol-1-one-egg---one-validation&quot;&gt;&lt;a href=&quot;#sol-1-one-egg---one-validation&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sol 1: One egg - One validation&lt;/h3&gt;
 &lt;p&gt;Life is so simple. Pass that one egg through that one validator. Results in good or bad.&lt;/p&gt;
@@ -352,6 +352,7 @@ The sequel brings-in some new names like Immutability, Parallelism, Memoization 
 &lt;li&gt;&lt;strong&gt;Monad&lt;/strong&gt;, Think of monad as a context object that wraps a value and allows us to apply a set of transformations on that value and get it back out with all the transformations applied. &lt;/li&gt;
 &lt;li&gt;Stream and Optional are Monads, when they are used as &lt;code class=&quot;language-text&quot;&gt;Stream.of()&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;Optional.of()&lt;/code&gt; as constructors and &lt;code class=&quot;language-text&quot;&gt;map()&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;flatMap()&lt;/code&gt; as binding functions.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;div class=&quot;gatsby-code-title&quot;&gt;OptionalMonad.java&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-java line-numbers&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;Optional&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;flatMap&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;addOne&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;flatMap&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;addTwo&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Optional&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;flatMap&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;addThree&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;collect()&lt;/code&gt; method is called &lt;strong&gt;fold&lt;/strong&gt; in FP terms, which summarizes bunch of values into one.&lt;/li&gt;
@@ -462,6 +463,7 @@ The sequel brings-in some new names like Immutability, Parallelism, Memoization 
 &lt;ul&gt;
 &lt;li&gt;One should make calls only to its immediate objects. Otherwise, it builds unnecessary dependencies between objects and makes the system fragile and complex to understand.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;div class=&quot;gatsby-code-title&quot;&gt;LawOfDelimiter.java&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-java line-numbers&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;station&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getThermometer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getTemp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Wrong approach&lt;/span&gt;
 station&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getTemp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Right approach&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
@@ -490,51 +492,13 @@ For example, if we have to design a system that deals with &lt;strong&gt;People&
 &lt;li&gt;FP is handy over OOP when the core essence of objects are functions. In such scenario, design can be changed from OOP to FP, by passing the core function as an argument to constructor and use it for evaluation. This smells &lt;strong&gt;Strategy Pattern&lt;/strong&gt;. Before Java 8, we had to use anonymous inner classes to achieve the same.&lt;/li&gt;
 &lt;li&gt;Functions can be treated as values, and they can be assigned to variables. These are called &lt;strong&gt;First Class Functions&lt;/strong&gt; and this type of programming is called &lt;strong&gt;Higher Order Programming&lt;/strong&gt;. Function&amp;#x3C;&gt;, Consumer&amp;#x3C;&gt; etc can be used as variable types to which either lambdas or anonymous inner classes be assigned as values.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;div id=&quot;gist93453226&quot; class=&quot;gist&quot;&gt;
-    &lt;div class=&quot;gist-file&quot;&gt;
-      &lt;div class=&quot;gist-data&quot;&gt;
-        &lt;div class=&quot;js-gist-file-update-container js-task-list-container file-box&quot;&gt;
-  &lt;div id=&quot;file-firstclassfunction-java&quot; class=&quot;file&quot;&gt;
-    
-
-  &lt;div itemprop=&quot;text&quot; class=&quot;blob-wrapper data type-java &quot;&gt;
-      
-&lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot;&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-firstclassfunction-java-L1&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;1&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-firstclassfunction-java-LC1&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=&quot;pl-k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;pl-k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;pl-k&quot;&gt;Function&amp;lt;&lt;span class=&quot;pl-smi&quot;&gt;String&lt;/span&gt;, &lt;span class=&quot;pl-smi&quot;&gt;String&lt;/span&gt;&amp;gt;&lt;/span&gt; lastWord &lt;span class=&quot;pl-k&quot;&gt;=&lt;/span&gt; (&lt;span class=&quot;pl-smi&quot;&gt;String&lt;/span&gt; phrase) &lt;span class=&quot;pl-k&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;pl-k&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-firstclassfunction-java-L2&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;2&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-firstclassfunction-java-LC2&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;     &lt;span class=&quot;pl-smi&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;asList(phrase&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;split(&lt;span class=&quot;pl-s&quot;&gt;&lt;span class=&quot;pl-pds&quot;&gt;&amp;quot;&lt;/span&gt; &lt;span class=&quot;pl-pds&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;))&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;stream()&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-firstclassfunction-java-L3&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;3&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-firstclassfunction-java-LC3&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;                    .reduce((other, last) &lt;span class=&quot;pl-k&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;pl-k&quot;&gt;&amp;gt;&lt;/span&gt; last)&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-firstclassfunction-java-L4&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;4&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-firstclassfunction-java-LC4&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;                    .orElse(&lt;span class=&quot;pl-s&quot;&gt;&lt;span class=&quot;pl-pds&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;pl-pds&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;);&lt;/td&gt;
-      &lt;/tr&gt;
-&lt;/table&gt;
-
-
-  &lt;/div&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-
-      &lt;/div&gt;
-      &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/FirstClassFunction.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
-        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522#file-firstclassfunction-java&quot;&gt;FirstClassFunction.java&lt;/a&gt;
-        hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title&quot;&gt;FirstClassFunction.java&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-java line-numbers&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; Function&lt;span class=&quot;token generics function&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;String&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; String&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; lastWord &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;String phrase&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+     Arrays&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;asList&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;phrase&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;reduce&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;other&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; last&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; last&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;orElse&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
-&lt;li&gt;Functional Interfaces, with only one abstract function, can be represented with Lambdas, &lt;code class=&quot;language-() -&quot;&gt; {}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Functional Interfaces, with only one abstract function, can be represented with Lambdas, () -&gt; {}&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Data-in Data-out (DIDO) Functions&lt;/strong&gt;, are those that return the same value for a given set of inputs. This is called &lt;strong&gt;Referential Transparency&lt;/strong&gt;. Also know as &lt;strong&gt;Pure Functions&lt;/strong&gt; or functions with &lt;strong&gt;No Side Effects&lt;/strong&gt;. These kind of functions form the core of a Functional program.&lt;/li&gt;
 &lt;li&gt;FP also encourages &lt;strong&gt;Immutability&lt;/strong&gt; for the same reason, to avoid any side effects.&lt;/li&gt;
 &lt;/ul&gt;
@@ -542,90 +506,15 @@ For example, if we have to design a system that deals with &lt;strong&gt;People&
 &lt;ul&gt;
 &lt;li&gt;In the code below, the function receives lambda as an argument. Since this is a type of Functional Interface, the lambda holds the implementation of single abstract method, in this case &lt;code class=&quot;language-text&quot;&gt;apply()&lt;/code&gt; (‘apply’ is the notation used for single abstract method in functional interface when its purpose can be anything).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;div id=&quot;gist93453226&quot; class=&quot;gist&quot;&gt;
-    &lt;div class=&quot;gist-file&quot;&gt;
-      &lt;div class=&quot;gist-data&quot;&gt;
-        &lt;div class=&quot;js-gist-file-update-container js-task-list-container file-box&quot;&gt;
-  &lt;div id=&quot;file-functionalinterface-java&quot; class=&quot;file&quot;&gt;
-    
+&lt;div class=&quot;gatsby-code-title&quot;&gt;FunctionalInterface.java&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-java line-numbers&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token annotation punctuation&quot;&gt;@FunctionalInterface&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;FunctionOf3&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;double&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;double&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;double&lt;/span&gt; c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-  &lt;div itemprop=&quot;text&quot; class=&quot;blob-wrapper data type-java &quot;&gt;
-      
-&lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot;&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-functionalinterface-java-L1&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;1&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-functionalinterface-java-LC1&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=&quot;pl-k&quot;&gt;@FunctionalInterface&lt;/span&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-functionalinterface-java-L2&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;2&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-functionalinterface-java-LC2&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=&quot;pl-k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;pl-k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;pl-k&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;pl-en&quot;&gt;FunctionOf3&lt;/span&gt; {&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-functionalinterface-java-L3&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;3&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-functionalinterface-java-LC3&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;  &lt;span class=&quot;pl-k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;pl-k&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;pl-en&quot;&gt;apply&lt;/span&gt;(&lt;span class=&quot;pl-k&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;pl-v&quot;&gt;a&lt;/span&gt;, &lt;span class=&quot;pl-k&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;pl-v&quot;&gt;b&lt;/span&gt;, &lt;span class=&quot;pl-k&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;pl-v&quot;&gt;c&lt;/span&gt;);&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-functionalinterface-java-L4&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;4&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-functionalinterface-java-LC4&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;}&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-functionalinterface-java-L5&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;5&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-functionalinterface-java-LC5&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;
-&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-functionalinterface-java-L6&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;6&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-functionalinterface-java-LC6&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=&quot;pl-k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;pl-smi&quot;&gt;FunctionOverTime&lt;/span&gt; combinationOf3(&lt;span class=&quot;pl-smi&quot;&gt;FunctionOverTime&lt;/span&gt; a, &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-functionalinterface-java-L7&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;7&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-functionalinterface-java-LC7&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;                                       &lt;span class=&quot;pl-smi&quot;&gt;FunctionOverTime&lt;/span&gt; b, &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-functionalinterface-java-L8&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;8&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-functionalinterface-java-LC8&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;                                       &lt;span class=&quot;pl-smi&quot;&gt;FunctionOverTime&lt;/span&gt; c, &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-functionalinterface-java-L9&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;9&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-functionalinterface-java-LC9&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;                                       &lt;span class=&quot;pl-smi&quot;&gt;FunctionOf3&lt;/span&gt; combination) {&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-functionalinterface-java-L10&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;10&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-functionalinterface-java-LC10&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;  &lt;span class=&quot;pl-k&quot;&gt;return&lt;/span&gt; (time) &lt;span class=&quot;pl-k&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;pl-k&quot;&gt;&amp;gt;&lt;/span&gt; combination&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;apply(&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-functionalinterface-java-L11&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;11&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-functionalinterface-java-LC11&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;    a&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;valueAt(time), &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-functionalinterface-java-L12&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;12&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-functionalinterface-java-LC12&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;    b&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;valueAt(time), &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-functionalinterface-java-L13&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;13&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-functionalinterface-java-LC13&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;    c&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;valueAt(time));&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-functionalinterface-java-L14&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;14&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-functionalinterface-java-LC14&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;}&lt;/td&gt;
-      &lt;/tr&gt;
-&lt;/table&gt;
-
-
-  &lt;/div&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-
-      &lt;/div&gt;
-      &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/FunctionalInterface.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
-        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522#file-functionalinterface-java&quot;&gt;FunctionalInterface.java&lt;/a&gt;
-        hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
+&lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; FunctionOverTime &lt;span class=&quot;token function&quot;&gt;combinationOf3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;FunctionOverTime a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; FunctionOverTime b&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; FunctionOverTime c&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; FunctionOf3 combination&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;time&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; combination&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;valueAt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;time&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;valueAt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;time&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; c&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;valueAt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;time&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;Think of lambdas as Maths formulas. So you can essentially pass the values along with their formula to the function, and function uses the formula passed to evaluate like above. This way we can abstract the formula and the values passed.&lt;/li&gt;
 &lt;li&gt;Like Encapsulation in OOP, FP’s mantra is &lt;strong&gt;Isolation&lt;/strong&gt;, that is running functions without any knowledge of the outside world.&lt;/li&gt;
@@ -643,209 +532,44 @@ For example, if we have to design a system that deals with &lt;strong&gt;People&
 &lt;li&gt;Lazy processing is efficient and moreover it does things with Separation of Concerns.&lt;/li&gt;
 &lt;li&gt;Also, all intermediate operations are &lt;strong&gt;Lazy Streams&lt;/strong&gt;, which means one unit of stream gets executed through all the steps in the pipe-line, before the next one is taken up. If a Truncate operation like &lt;code class=&quot;language-text&quot;&gt;findFirst()&lt;/code&gt; is encountered, rest of the units are ignored.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;div id=&quot;gist93453226&quot; class=&quot;gist&quot;&gt;
-    &lt;div class=&quot;gist-file&quot;&gt;
-      &lt;div class=&quot;gist-data&quot;&gt;
-        &lt;div class=&quot;js-gist-file-update-container js-task-list-container file-box&quot;&gt;
-  &lt;div id=&quot;file-lazystream-java&quot; class=&quot;file&quot;&gt;
-    
+&lt;div class=&quot;gatsby-code-title&quot;&gt;LazyStream.java&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-java line-numbers&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;List&lt;span class=&quot;token generics function&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;Integer&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; list &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Arrays&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;asList&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; list&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; System&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;will filter &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; num&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;x &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;findFirst&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+System&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-  &lt;div itemprop=&quot;text&quot; class=&quot;blob-wrapper data type-java &quot;&gt;
-      
-&lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot;&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-lazystream-java-L1&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;1&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-lazystream-java-LC1&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=&quot;pl-k&quot;&gt;List&amp;lt;&lt;span class=&quot;pl-smi&quot;&gt;Integer&lt;/span&gt;&amp;gt;&lt;/span&gt; list &lt;span class=&quot;pl-k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;pl-smi&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;asList(&lt;span class=&quot;pl-c1&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;pl-c1&quot;&gt;10&lt;/span&gt;, &lt;span class=&quot;pl-c1&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;pl-c1&quot;&gt;7&lt;/span&gt;, &lt;span class=&quot;pl-c1&quot;&gt;5&lt;/span&gt;);&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-lazystream-java-L2&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;2&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-lazystream-java-LC2&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=&quot;pl-k&quot;&gt;int&lt;/span&gt; a &lt;span class=&quot;pl-k&quot;&gt;=&lt;/span&gt; list&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;stream()&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-lazystream-java-L3&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;3&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-lazystream-java-LC3&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;            .peek(num &lt;span class=&quot;pl-k&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;pl-k&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;pl-smi&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;println(&lt;span class=&quot;pl-s&quot;&gt;&lt;span class=&quot;pl-pds&quot;&gt;&amp;quot;&lt;/span&gt;will filter &lt;span class=&quot;pl-pds&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;pl-k&quot;&gt;+&lt;/span&gt; num))&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-lazystream-java-L4&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;4&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-lazystream-java-LC4&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;            .filter(x &lt;span class=&quot;pl-k&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;pl-k&quot;&gt;&amp;gt;&lt;/span&gt; x &lt;span class=&quot;pl-k&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;pl-c1&quot;&gt;5&lt;/span&gt;)&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-lazystream-java-L5&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;5&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-lazystream-java-LC5&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;            .findFirst()&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-lazystream-java-L6&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;6&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-lazystream-java-LC6&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;            .get();&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-lazystream-java-L7&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;7&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-lazystream-java-LC7&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=&quot;pl-smi&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;println(a);&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-lazystream-java-L8&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;8&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-lazystream-java-LC8&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;
-&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-lazystream-java-L9&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;9&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-lazystream-java-LC9&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=&quot;pl-c&quot;&gt;&lt;span class=&quot;pl-c&quot;&gt;/*&lt;/span&gt; &lt;/span&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-lazystream-java-L10&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;10&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-lazystream-java-LC10&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=&quot;pl-c&quot;&gt;This outputs:&lt;/span&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-lazystream-java-L11&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;11&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-lazystream-java-LC11&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=&quot;pl-c&quot;&gt;will filter 1&lt;/span&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-lazystream-java-L12&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;12&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-lazystream-java-LC12&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=&quot;pl-c&quot;&gt;will filter 10&lt;/span&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-lazystream-java-L13&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;13&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-lazystream-java-LC13&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=&quot;pl-c&quot;&gt;10&lt;/span&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-lazystream-java-L14&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;14&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-lazystream-java-LC14&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=&quot;pl-c&quot;&gt;&lt;span class=&quot;pl-c&quot;&gt;*/&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-&lt;/table&gt;
-
-
-  &lt;/div&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-
-      &lt;/div&gt;
-      &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/LazyStream.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
-        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522#file-lazystream-java&quot;&gt;LazyStream.java&lt;/a&gt;
-        hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
+&lt;span class=&quot;token comment&quot;&gt;/* 
+This outputs:
+will filter 1
+will filter 10
+10
+*/&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;Functions like &lt;code class=&quot;language-text&quot;&gt;mapToDouble()&lt;/code&gt; can deal with primitives without wrapping, which is more efficient. Explore more of such…&lt;/li&gt;
 &lt;li&gt;Short-Circuiting terminal operations like &lt;code class=&quot;language-text&quot;&gt;anyMatch()&lt;/code&gt; process the stream only as much as required to return the desired result.&lt;/li&gt;
 &lt;li&gt;Once the terminal operation is executed, the stream is dead, and throws an exception when reused (Unlike Iterator which would just return empty). To Reuse as Stream, declare it as type &lt;code class=&quot;language-text&quot;&gt;Supplier&amp;lt;Stream&amp;gt;&lt;/code&gt; and use its &lt;code class=&quot;language-text&quot;&gt;get()&lt;/code&gt; method to get new instance of stream.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;div id=&quot;gist93453226&quot; class=&quot;gist&quot;&gt;
-    &lt;div class=&quot;gist-file&quot;&gt;
-      &lt;div class=&quot;gist-data&quot;&gt;
-        &lt;div class=&quot;js-gist-file-update-container js-task-list-container file-box&quot;&gt;
-  &lt;div id=&quot;file-supplier-java&quot; class=&quot;file&quot;&gt;
-    
-
-  &lt;div itemprop=&quot;text&quot; class=&quot;blob-wrapper data type-java &quot;&gt;
-      
-&lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot;&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-supplier-java-L1&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;1&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-supplier-java-LC1&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=&quot;pl-k&quot;&gt;Supplier&amp;lt;&lt;span class=&quot;pl-smi&quot;&gt;DoubleStream&lt;/span&gt;&amp;gt;&lt;/span&gt; totalStream &lt;span class=&quot;pl-k&quot;&gt;=&lt;/span&gt; () &lt;span class=&quot;pl-k&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;pl-k&quot;&gt;&amp;gt;&lt;/span&gt; saleStream()&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;mapToDouble(&lt;span class=&quot;pl-smi&quot;&gt;Sale&lt;/span&gt;&lt;span class=&quot;pl-k&quot;&gt;::&lt;/span&gt;total);&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-supplier-java-L2&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;2&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-supplier-java-LC2&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=&quot;pl-k&quot;&gt;boolean&lt;/span&gt; bigSaleDay &lt;span class=&quot;pl-k&quot;&gt;=&lt;/span&gt; totalStream&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;get()&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;anyMatch(total &lt;span class=&quot;pl-k&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;pl-k&quot;&gt;&amp;gt;&lt;/span&gt; total &lt;span class=&quot;pl-k&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;pl-c1&quot;&gt;100.00&lt;/span&gt;);&lt;/td&gt;
-      &lt;/tr&gt;
-&lt;/table&gt;
-
-
-  &lt;/div&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-
-      &lt;/div&gt;
-      &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/Supplier.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
-        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522#file-supplier-java&quot;&gt;Supplier.java&lt;/a&gt;
-        hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title&quot;&gt;Supplier.java&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-java line-numbers&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;Supplier&lt;span class=&quot;token generics function&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;DoubleStream&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; totalStream &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;saleStream&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;mapToDouble&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Sale&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;total&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;boolean&lt;/span&gt; bigSaleDay &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; totalStream&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;anyMatch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;total &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; total &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100.00&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;Intermediate operations when called on a stream returns a stream.&lt;/li&gt;
 &lt;li&gt;Use &lt;code class=&quot;language-text&quot;&gt;flatMap()&lt;/code&gt; to flatten a collection of stream before operating on it and outputs a concatenation of all those streams.&lt;/li&gt;
 &lt;li&gt;In the code below, assume &lt;code class=&quot;language-text&quot;&gt;saleStream()&lt;/code&gt; produces a stream of sales and every sale has a list of items. &lt;code class=&quot;language-text&quot;&gt;map&lt;/code&gt; returns a Stream of Streams, while &lt;code class=&quot;language-text&quot;&gt;flatMap&lt;/code&gt; flattens all those streams and concatinates them into a single stream.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;div id=&quot;gist93453226&quot; class=&quot;gist&quot;&gt;
-    &lt;div class=&quot;gist-file&quot;&gt;
-      &lt;div class=&quot;gist-data&quot;&gt;
-        &lt;div class=&quot;js-gist-file-update-container js-task-list-container file-box&quot;&gt;
-  &lt;div id=&quot;file-supplier-java&quot; class=&quot;file&quot;&gt;
-    
-
-  &lt;div itemprop=&quot;text&quot; class=&quot;blob-wrapper data type-java &quot;&gt;
-      
-&lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot;&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-supplier-java-L1&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;1&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-supplier-java-LC1&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=&quot;pl-k&quot;&gt;Supplier&amp;lt;&lt;span class=&quot;pl-smi&quot;&gt;DoubleStream&lt;/span&gt;&amp;gt;&lt;/span&gt; totalStream &lt;span class=&quot;pl-k&quot;&gt;=&lt;/span&gt; () &lt;span class=&quot;pl-k&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;pl-k&quot;&gt;&amp;gt;&lt;/span&gt; saleStream()&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;mapToDouble(&lt;span class=&quot;pl-smi&quot;&gt;Sale&lt;/span&gt;&lt;span class=&quot;pl-k&quot;&gt;::&lt;/span&gt;total);&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-supplier-java-L2&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;2&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-supplier-java-LC2&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=&quot;pl-k&quot;&gt;boolean&lt;/span&gt; bigSaleDay &lt;span class=&quot;pl-k&quot;&gt;=&lt;/span&gt; totalStream&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;get()&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;anyMatch(total &lt;span class=&quot;pl-k&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;pl-k&quot;&gt;&amp;gt;&lt;/span&gt; total &lt;span class=&quot;pl-k&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;pl-c1&quot;&gt;100.00&lt;/span&gt;);&lt;/td&gt;
-      &lt;/tr&gt;
-&lt;/table&gt;
-
-
-  &lt;/div&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-
-      &lt;/div&gt;
-      &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/Supplier.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
-        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522#file-supplier-java&quot;&gt;Supplier.java&lt;/a&gt;
-        hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title&quot;&gt;MapAndFlatMap.java&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-java line-numbers&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;Stream&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Stream&lt;span class=&quot;token generics function&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;Item&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; itemStream1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;saleStream&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sale &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; sale&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;items&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+Stream&lt;span class=&quot;token generics function&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;Item&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; itemStream2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;saleStream&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;flatMap&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sale &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; sale&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;items&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;collect()&lt;/code&gt; to collect the out-coming stream to a desired data structure like List. It also has interesting functions like &lt;code class=&quot;language-text&quot;&gt;groupBy&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;groupByConcurrent&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;summarizingDoubles&lt;/code&gt; etc. This is called &lt;strong&gt;fold&lt;/strong&gt; in FP terms, which summarizes bunch of values into one.&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Stream.generate(supplier)&lt;/code&gt; can generate an infinite stream of objects, but it needs to be used along with a Short-Circuiting operator like &lt;code class=&quot;language-text&quot;&gt;limit()&lt;/code&gt;. The below code generates sale objects supplied by the &lt;code class=&quot;language-text&quot;&gt;Supplier&lt;/code&gt;, limited by the quantity passed.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;div id=&quot;gist93453226&quot; class=&quot;gist&quot;&gt;
-    &lt;div class=&quot;gist-file&quot;&gt;
-      &lt;div class=&quot;gist-data&quot;&gt;
-        &lt;div class=&quot;js-gist-file-update-container js-task-list-container file-box&quot;&gt;
-  &lt;div id=&quot;file-infinitestream-java&quot; class=&quot;file&quot;&gt;
-    
-
-  &lt;div itemprop=&quot;text&quot; class=&quot;blob-wrapper data type-java &quot;&gt;
-      
-&lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot;&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-infinitestream-java-L1&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;1&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-infinitestream-java-LC1&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=&quot;pl-k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;pl-k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;pl-k&quot;&gt;Supplier&amp;lt;&lt;span class=&quot;pl-smi&quot;&gt;Sale&lt;/span&gt;&amp;gt;&lt;/span&gt; supplier &lt;span class=&quot;pl-k&quot;&gt;=&lt;/span&gt; () &lt;span class=&quot;pl-k&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;pl-k&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;pl-k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;pl-smi&quot;&gt;Sale&lt;/span&gt;(&lt;span class=&quot;pl-c1&quot;&gt;...&lt;/span&gt;);&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td id=&quot;file-infinitestream-java-L2&quot; class=&quot;blob-num js-line-number&quot; data-line-number=&quot;2&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;file-infinitestream-java-LC2&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=&quot;pl-k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;pl-smi&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;generate(supplier)&lt;span class=&quot;pl-k&quot;&gt;.&lt;/span&gt;limit(quantity);&lt;/td&gt;
-      &lt;/tr&gt;
-&lt;/table&gt;
-
-
-  &lt;/div&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-
-      &lt;/div&gt;
-      &lt;div class=&quot;gist-meta&quot;&gt;
-        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/InfiniteStream.java&quot; style=&quot;float:right&quot;&gt;view raw&lt;/a&gt;
-        &lt;a href=&quot;https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522#file-infinitestream-java&quot;&gt;InfiniteStream.java&lt;/a&gt;
-        hosted with &amp;#10084; by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title&quot;&gt;InfiniteStream.java&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-java line-numbers&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; Supplier&lt;span class=&quot;token generics function&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;Sale&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; supplier &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Sale&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; Stream&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;generate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;supplier&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;limit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;quantity&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;ParallelStreams&lt;/strong&gt; are a great way to span work onto multiple threads, when order of processing is not of a concern.&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Optional&lt;/code&gt; is preferred over traditional null checking with &lt;code class=&quot;language-text&quot;&gt;isPresent()&lt;/code&gt; which is more intuative. Since passing optionals around methods avoids presence of NULLs, there won’t be any restlessness about NPE. Note, you still need to check &lt;code class=&quot;language-text&quot;&gt;isPresent()&lt;/code&gt;, so it’s not a total replacement to avoid checking, it just makes it error free. According to the documentation, Optional should be used as a return type. And that’s all. It’s a neat solution for handling data that might be not present.&lt;/li&gt;

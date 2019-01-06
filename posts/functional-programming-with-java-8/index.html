@@ -54,7 +54,7 @@
     ga('create', 'UA-131255680-1', 'auto', {});
       
       }
-      </script><link as="script" rel="preload" href="/webpack-runtime-22c7c7b99dcbddb14cb7.js"/><link as="script" rel="preload" href="/app-788fc88ef2982be3cad1.js"/><link as="script" rel="preload" href="/0-96dab5576f25e5c135fa.js"/><link as="script" rel="preload" href="/2-4bf80ab6bb5b81b1d068.js"/><link as="script" rel="preload" href="/15-7e341543e58663e69225.js"/><link as="script" rel="preload" href="/1-8b3d1493ef6569eba195.js"/><link as="script" rel="preload" href="/component---src-templates-post-template-jsx-04a963aa70587069973f.js"/><link as="fetch" rel="preload" href="/static/d/886/path---posts-functional-programming-with-java-8-bba-c6b-bDznzHJxSl3VwTr4jXIyos3M.json" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class="layout"><div><div><div><a class="post-single__home-button" href="/">All Articles</a><div class="applause"><applause-button multiclap="true"></applause-button></div></div><div class="post-single"><div class="post-single__inner"><h1 class="post-single__title">Kung fu Lambda ƛ</h1><div style="text-align:center;font-size:larger">☕️☕️ 10 min read</div><div class="post-single__body"><h3 id="fp-vs-oop-simply"><a href="#fp-vs-oop-simply" aria-hidden class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>FP vs OOP Simply:</h3>
+      </script><link as="script" rel="preload" href="/webpack-runtime-a161f13b8aa8b033df42.js"/><link as="script" rel="preload" href="/app-788fc88ef2982be3cad1.js"/><link as="script" rel="preload" href="/0-96dab5576f25e5c135fa.js"/><link as="script" rel="preload" href="/2-4bf80ab6bb5b81b1d068.js"/><link as="script" rel="preload" href="/15-7e341543e58663e69225.js"/><link as="script" rel="preload" href="/1-8b3d1493ef6569eba195.js"/><link as="script" rel="preload" href="/component---src-templates-post-template-jsx-04a963aa70587069973f.js"/><link as="fetch" rel="preload" href="/static/d/419/path---posts-functional-programming-with-java-8-bba-c6b-GEmhpnSn2rKR9GY28tMkKRFqg.json" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class="layout"><div><div><div><a class="post-single__home-button" href="/">All Articles</a><div class="applause"><applause-button multiclap="true"></applause-button></div></div><div class="post-single"><div class="post-single__inner"><h1 class="post-single__title">Kung fu Lambda ƛ</h1><div style="text-align:center;font-size:larger">☕️ 7 min read</div><div class="post-single__body"><h3 id="fp-vs-oop-simply"><a href="#fp-vs-oop-simply" aria-hidden class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>FP vs OOP Simply:</h3>
 <ul>
 <li>Whenever I write some code to deal with data about an entity, then functional programming seems to work best.</li>
 <li>Whenever I write some code to simulate that entity, then object-oriented programming seems to work best.
@@ -67,51 +67,13 @@ For example, if we have to design a system that deals with <strong>People</stron
 <li>FP is handy over OOP when the core essence of objects are functions. In such scenario, design can be changed from OOP to FP, by passing the core function as an argument to constructor and use it for evaluation. This smells <strong>Strategy Pattern</strong>. Before Java 8, we had to use anonymous inner classes to achieve the same.</li>
 <li>Functions can be treated as values, and they can be assigned to variables. These are called <strong>First Class Functions</strong> and this type of programming is called <strong>Higher Order Programming</strong>. Function&#x3C;>, Consumer&#x3C;> etc can be used as variable types to which either lambdas or anonymous inner classes be assigned as values.</li>
 </ul>
-<p><div id="gist93453226" class="gist">
-    <div class="gist-file">
-      <div class="gist-data">
-        <div class="js-gist-file-update-container js-task-list-container file-box">
-  <div id="file-firstclassfunction-java" class="file">
-    
-
-  <div itemprop="text" class="blob-wrapper data type-java ">
-      
-<table class="highlight tab-size js-file-line-container" data-tab-size="8">
-      <tr>
-        <td id="file-firstclassfunction-java-L1" class="blob-num js-line-number" data-line-number="1"></td>
-        <td id="file-firstclassfunction-java-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">private</span> <span class="pl-k">static</span> <span class="pl-k">Function&lt;<span class="pl-smi">String</span>, <span class="pl-smi">String</span>&gt;</span> lastWord <span class="pl-k">=</span> (<span class="pl-smi">String</span> phrase) <span class="pl-k">-</span><span class="pl-k">&gt;</span></td>
-      </tr>
-      <tr>
-        <td id="file-firstclassfunction-java-L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="file-firstclassfunction-java-LC2" class="blob-code blob-code-inner js-file-line">     <span class="pl-smi">Arrays</span><span class="pl-k">.</span>asList(phrase<span class="pl-k">.</span>split(<span class="pl-s"><span class="pl-pds">&quot;</span> <span class="pl-pds">&quot;</span></span>))<span class="pl-k">.</span>stream()</td>
-      </tr>
-      <tr>
-        <td id="file-firstclassfunction-java-L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="file-firstclassfunction-java-LC3" class="blob-code blob-code-inner js-file-line">                    .reduce((other, last) <span class="pl-k">-</span><span class="pl-k">&gt;</span> last)</td>
-      </tr>
-      <tr>
-        <td id="file-firstclassfunction-java-L4" class="blob-num js-line-number" data-line-number="4"></td>
-        <td id="file-firstclassfunction-java-LC4" class="blob-code blob-code-inner js-file-line">                    .orElse(<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>);</td>
-      </tr>
-</table>
-
-
-  </div>
-
-  </div>
-</div>
-
-      </div>
-      <div class="gist-meta">
-        <a href="https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/FirstClassFunction.java" style="float:right">view raw</a>
-        <a href="https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522#file-firstclassfunction-java">FirstClassFunction.java</a>
-        hosted with &#10084; by <a href="https://github.com">GitHub</a>
-      </div>
-    </div>
-</div>
-</p>
+<div class="gatsby-code-title">FirstClassFunction.java</div>
+<div class="gatsby-highlight" data-language="java"><pre style="counter-reset: linenumber NaN" class="language-java line-numbers"><code class="language-java"><span class="token keyword">private</span> <span class="token keyword">static</span> Function<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">,</span> String<span class="token punctuation">></span></span> lastWord <span class="token operator">=</span> <span class="token punctuation">(</span>String phrase<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span>
+     Arrays<span class="token punctuation">.</span><span class="token function">asList</span><span class="token punctuation">(</span>phrase<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">stream</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                    <span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span>other<span class="token punctuation">,</span> last<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> last<span class="token punctuation">)</span>
+                    <span class="token punctuation">.</span><span class="token function">orElse</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span></span></pre></div>
 <ul>
-<li>Functional Interfaces, with only one abstract function, can be represented with Lambdas, <code class="language-() -"> {}</code></li>
+<li>Functional Interfaces, with only one abstract function, can be represented with Lambdas, () -> {}</li>
 <li><strong>Data-in Data-out (DIDO) Functions</strong>, are those that return the same value for a given set of inputs. This is called <strong>Referential Transparency</strong>. Also know as <strong>Pure Functions</strong> or functions with <strong>No Side Effects</strong>. These kind of functions form the core of a Functional program.</li>
 <li>FP also encourages <strong>Immutability</strong> for the same reason, to avoid any side effects.</li>
 </ul>
@@ -119,90 +81,15 @@ For example, if we have to design a system that deals with <strong>People</stron
 <ul>
 <li>In the code below, the function receives lambda as an argument. Since this is a type of Functional Interface, the lambda holds the implementation of single abstract method, in this case <code class="language-text">apply()</code> (‘apply’ is the notation used for single abstract method in functional interface when its purpose can be anything).</li>
 </ul>
-<p><div id="gist93453226" class="gist">
-    <div class="gist-file">
-      <div class="gist-data">
-        <div class="js-gist-file-update-container js-task-list-container file-box">
-  <div id="file-functionalinterface-java" class="file">
-    
+<div class="gatsby-code-title">FunctionalInterface.java</div>
+<div class="gatsby-highlight" data-language="java"><pre style="counter-reset: linenumber NaN" class="language-java line-numbers"><code class="language-java"><span class="token annotation punctuation">@FunctionalInterface</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">interface</span> <span class="token class-name">FunctionOf3</span> <span class="token punctuation">{</span>
+  <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">double</span> a<span class="token punctuation">,</span> <span class="token keyword">double</span> b<span class="token punctuation">,</span> <span class="token keyword">double</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-  <div itemprop="text" class="blob-wrapper data type-java ">
-      
-<table class="highlight tab-size js-file-line-container" data-tab-size="8">
-      <tr>
-        <td id="file-functionalinterface-java-L1" class="blob-num js-line-number" data-line-number="1"></td>
-        <td id="file-functionalinterface-java-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">@FunctionalInterface</span></td>
-      </tr>
-      <tr>
-        <td id="file-functionalinterface-java-L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="file-functionalinterface-java-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">interface</span> <span class="pl-en">FunctionOf3</span> {</td>
-      </tr>
-      <tr>
-        <td id="file-functionalinterface-java-L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="file-functionalinterface-java-LC3" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">public</span> <span class="pl-k">double</span> <span class="pl-en">apply</span>(<span class="pl-k">double</span> <span class="pl-v">a</span>, <span class="pl-k">double</span> <span class="pl-v">b</span>, <span class="pl-k">double</span> <span class="pl-v">c</span>);</td>
-      </tr>
-      <tr>
-        <td id="file-functionalinterface-java-L4" class="blob-num js-line-number" data-line-number="4"></td>
-        <td id="file-functionalinterface-java-LC4" class="blob-code blob-code-inner js-file-line">}</td>
-      </tr>
-      <tr>
-        <td id="file-functionalinterface-java-L5" class="blob-num js-line-number" data-line-number="5"></td>
-        <td id="file-functionalinterface-java-LC5" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="file-functionalinterface-java-L6" class="blob-num js-line-number" data-line-number="6"></td>
-        <td id="file-functionalinterface-java-LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-k">static</span> <span class="pl-smi">FunctionOverTime</span> combinationOf3(<span class="pl-smi">FunctionOverTime</span> a, </td>
-      </tr>
-      <tr>
-        <td id="file-functionalinterface-java-L7" class="blob-num js-line-number" data-line-number="7"></td>
-        <td id="file-functionalinterface-java-LC7" class="blob-code blob-code-inner js-file-line">                                       <span class="pl-smi">FunctionOverTime</span> b, </td>
-      </tr>
-      <tr>
-        <td id="file-functionalinterface-java-L8" class="blob-num js-line-number" data-line-number="8"></td>
-        <td id="file-functionalinterface-java-LC8" class="blob-code blob-code-inner js-file-line">                                       <span class="pl-smi">FunctionOverTime</span> c, </td>
-      </tr>
-      <tr>
-        <td id="file-functionalinterface-java-L9" class="blob-num js-line-number" data-line-number="9"></td>
-        <td id="file-functionalinterface-java-LC9" class="blob-code blob-code-inner js-file-line">                                       <span class="pl-smi">FunctionOf3</span> combination) {</td>
-      </tr>
-      <tr>
-        <td id="file-functionalinterface-java-L10" class="blob-num js-line-number" data-line-number="10"></td>
-        <td id="file-functionalinterface-java-LC10" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">return</span> (time) <span class="pl-k">-</span><span class="pl-k">&gt;</span> combination<span class="pl-k">.</span>apply(</td>
-      </tr>
-      <tr>
-        <td id="file-functionalinterface-java-L11" class="blob-num js-line-number" data-line-number="11"></td>
-        <td id="file-functionalinterface-java-LC11" class="blob-code blob-code-inner js-file-line">    a<span class="pl-k">.</span>valueAt(time), </td>
-      </tr>
-      <tr>
-        <td id="file-functionalinterface-java-L12" class="blob-num js-line-number" data-line-number="12"></td>
-        <td id="file-functionalinterface-java-LC12" class="blob-code blob-code-inner js-file-line">    b<span class="pl-k">.</span>valueAt(time), </td>
-      </tr>
-      <tr>
-        <td id="file-functionalinterface-java-L13" class="blob-num js-line-number" data-line-number="13"></td>
-        <td id="file-functionalinterface-java-LC13" class="blob-code blob-code-inner js-file-line">    c<span class="pl-k">.</span>valueAt(time));</td>
-      </tr>
-      <tr>
-        <td id="file-functionalinterface-java-L14" class="blob-num js-line-number" data-line-number="14"></td>
-        <td id="file-functionalinterface-java-LC14" class="blob-code blob-code-inner js-file-line">}</td>
-      </tr>
-</table>
-
-
-  </div>
-
-  </div>
-</div>
-
-      </div>
-      <div class="gist-meta">
-        <a href="https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/FunctionalInterface.java" style="float:right">view raw</a>
-        <a href="https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522#file-functionalinterface-java">FunctionalInterface.java</a>
-        hosted with &#10084; by <a href="https://github.com">GitHub</a>
-      </div>
-    </div>
-</div>
-</p>
+<span class="token keyword">static</span> FunctionOverTime <span class="token function">combinationOf3</span><span class="token punctuation">(</span>FunctionOverTime a<span class="token punctuation">,</span> FunctionOverTime b<span class="token punctuation">,</span> FunctionOverTime c<span class="token punctuation">,</span> FunctionOf3 combination<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>time<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> combination<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span><span class="token function">valueAt</span><span class="token punctuation">(</span>time<span class="token punctuation">)</span><span class="token punctuation">,</span> b<span class="token punctuation">.</span><span class="token function">valueAt</span><span class="token punctuation">(</span>time<span class="token punctuation">)</span><span class="token punctuation">,</span> c<span class="token punctuation">.</span><span class="token function">valueAt</span><span class="token punctuation">(</span>time<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <ul>
 <li>Think of lambdas as Maths formulas. So you can essentially pass the values along with their formula to the function, and function uses the formula passed to evaluate like above. This way we can abstract the formula and the values passed.</li>
 <li>Like Encapsulation in OOP, FP’s mantra is <strong>Isolation</strong>, that is running functions without any knowledge of the outside world.</li>
@@ -220,209 +107,44 @@ For example, if we have to design a system that deals with <strong>People</stron
 <li>Lazy processing is efficient and moreover it does things with Separation of Concerns.</li>
 <li>Also, all intermediate operations are <strong>Lazy Streams</strong>, which means one unit of stream gets executed through all the steps in the pipe-line, before the next one is taken up. If a Truncate operation like <code class="language-text">findFirst()</code> is encountered, rest of the units are ignored.</li>
 </ul>
-<p><div id="gist93453226" class="gist">
-    <div class="gist-file">
-      <div class="gist-data">
-        <div class="js-gist-file-update-container js-task-list-container file-box">
-  <div id="file-lazystream-java" class="file">
-    
+<div class="gatsby-code-title">LazyStream.java</div>
+<div class="gatsby-highlight" data-language="java"><pre style="counter-reset: linenumber NaN" class="language-java line-numbers"><code class="language-java">List<span class="token generics function"><span class="token punctuation">&lt;</span>Integer<span class="token punctuation">></span></span> list <span class="token operator">=</span> Arrays<span class="token punctuation">.</span><span class="token function">asList</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> a <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">stream</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">peek</span><span class="token punctuation">(</span>num <span class="token operator">-</span><span class="token operator">></span> System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"will filter "</span> <span class="token operator">+</span> num<span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>x <span class="token operator">-</span><span class="token operator">></span> x <span class="token operator">></span> <span class="token number">5</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">findFirst</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-  <div itemprop="text" class="blob-wrapper data type-java ">
-      
-<table class="highlight tab-size js-file-line-container" data-tab-size="8">
-      <tr>
-        <td id="file-lazystream-java-L1" class="blob-num js-line-number" data-line-number="1"></td>
-        <td id="file-lazystream-java-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">List&lt;<span class="pl-smi">Integer</span>&gt;</span> list <span class="pl-k">=</span> <span class="pl-smi">Arrays</span><span class="pl-k">.</span>asList(<span class="pl-c1">1</span>, <span class="pl-c1">10</span>, <span class="pl-c1">3</span>, <span class="pl-c1">7</span>, <span class="pl-c1">5</span>);</td>
-      </tr>
-      <tr>
-        <td id="file-lazystream-java-L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="file-lazystream-java-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-k">int</span> a <span class="pl-k">=</span> list<span class="pl-k">.</span>stream()</td>
-      </tr>
-      <tr>
-        <td id="file-lazystream-java-L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="file-lazystream-java-LC3" class="blob-code blob-code-inner js-file-line">            .peek(num <span class="pl-k">-</span><span class="pl-k">&gt;</span> <span class="pl-smi">System</span><span class="pl-k">.</span>out<span class="pl-k">.</span>println(<span class="pl-s"><span class="pl-pds">&quot;</span>will filter <span class="pl-pds">&quot;</span></span> <span class="pl-k">+</span> num))</td>
-      </tr>
-      <tr>
-        <td id="file-lazystream-java-L4" class="blob-num js-line-number" data-line-number="4"></td>
-        <td id="file-lazystream-java-LC4" class="blob-code blob-code-inner js-file-line">            .filter(x <span class="pl-k">-</span><span class="pl-k">&gt;</span> x <span class="pl-k">&gt;</span> <span class="pl-c1">5</span>)</td>
-      </tr>
-      <tr>
-        <td id="file-lazystream-java-L5" class="blob-num js-line-number" data-line-number="5"></td>
-        <td id="file-lazystream-java-LC5" class="blob-code blob-code-inner js-file-line">            .findFirst()</td>
-      </tr>
-      <tr>
-        <td id="file-lazystream-java-L6" class="blob-num js-line-number" data-line-number="6"></td>
-        <td id="file-lazystream-java-LC6" class="blob-code blob-code-inner js-file-line">            .get();</td>
-      </tr>
-      <tr>
-        <td id="file-lazystream-java-L7" class="blob-num js-line-number" data-line-number="7"></td>
-        <td id="file-lazystream-java-LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-smi">System</span><span class="pl-k">.</span>out<span class="pl-k">.</span>println(a);</td>
-      </tr>
-      <tr>
-        <td id="file-lazystream-java-L8" class="blob-num js-line-number" data-line-number="8"></td>
-        <td id="file-lazystream-java-LC8" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="file-lazystream-java-L9" class="blob-num js-line-number" data-line-number="9"></td>
-        <td id="file-lazystream-java-LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">/*</span> </span></td>
-      </tr>
-      <tr>
-        <td id="file-lazystream-java-L10" class="blob-num js-line-number" data-line-number="10"></td>
-        <td id="file-lazystream-java-LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-c">This outputs:</span></td>
-      </tr>
-      <tr>
-        <td id="file-lazystream-java-L11" class="blob-num js-line-number" data-line-number="11"></td>
-        <td id="file-lazystream-java-LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-c">will filter 1</span></td>
-      </tr>
-      <tr>
-        <td id="file-lazystream-java-L12" class="blob-num js-line-number" data-line-number="12"></td>
-        <td id="file-lazystream-java-LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-c">will filter 10</span></td>
-      </tr>
-      <tr>
-        <td id="file-lazystream-java-L13" class="blob-num js-line-number" data-line-number="13"></td>
-        <td id="file-lazystream-java-LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-c">10</span></td>
-      </tr>
-      <tr>
-        <td id="file-lazystream-java-L14" class="blob-num js-line-number" data-line-number="14"></td>
-        <td id="file-lazystream-java-LC14" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">*/</span></span></td>
-      </tr>
-</table>
-
-
-  </div>
-
-  </div>
-</div>
-
-      </div>
-      <div class="gist-meta">
-        <a href="https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/LazyStream.java" style="float:right">view raw</a>
-        <a href="https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522#file-lazystream-java">LazyStream.java</a>
-        hosted with &#10084; by <a href="https://github.com">GitHub</a>
-      </div>
-    </div>
-</div>
-</p>
+<span class="token comment">/* 
+This outputs:
+will filter 1
+will filter 10
+10
+*/</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <ul>
 <li>Functions like <code class="language-text">mapToDouble()</code> can deal with primitives without wrapping, which is more efficient. Explore more of such…</li>
 <li>Short-Circuiting terminal operations like <code class="language-text">anyMatch()</code> process the stream only as much as required to return the desired result.</li>
 <li>Once the terminal operation is executed, the stream is dead, and throws an exception when reused (Unlike Iterator which would just return empty). To Reuse as Stream, declare it as type <code class="language-text">Supplier&lt;Stream&gt;</code> and use its <code class="language-text">get()</code> method to get new instance of stream.</li>
 </ul>
-<p><div id="gist93453226" class="gist">
-    <div class="gist-file">
-      <div class="gist-data">
-        <div class="js-gist-file-update-container js-task-list-container file-box">
-  <div id="file-supplier-java" class="file">
-    
-
-  <div itemprop="text" class="blob-wrapper data type-java ">
-      
-<table class="highlight tab-size js-file-line-container" data-tab-size="8">
-      <tr>
-        <td id="file-supplier-java-L1" class="blob-num js-line-number" data-line-number="1"></td>
-        <td id="file-supplier-java-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">Supplier&lt;<span class="pl-smi">DoubleStream</span>&gt;</span> totalStream <span class="pl-k">=</span> () <span class="pl-k">-</span><span class="pl-k">&gt;</span> saleStream()<span class="pl-k">.</span>mapToDouble(<span class="pl-smi">Sale</span><span class="pl-k">::</span>total);</td>
-      </tr>
-      <tr>
-        <td id="file-supplier-java-L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="file-supplier-java-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-k">boolean</span> bigSaleDay <span class="pl-k">=</span> totalStream<span class="pl-k">.</span>get()<span class="pl-k">.</span>anyMatch(total <span class="pl-k">-</span><span class="pl-k">&gt;</span> total <span class="pl-k">&gt;</span> <span class="pl-c1">100.00</span>);</td>
-      </tr>
-</table>
-
-
-  </div>
-
-  </div>
-</div>
-
-      </div>
-      <div class="gist-meta">
-        <a href="https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/Supplier.java" style="float:right">view raw</a>
-        <a href="https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522#file-supplier-java">Supplier.java</a>
-        hosted with &#10084; by <a href="https://github.com">GitHub</a>
-      </div>
-    </div>
-</div>
-</p>
+<div class="gatsby-code-title">Supplier.java</div>
+<div class="gatsby-highlight" data-language="java"><pre style="counter-reset: linenumber NaN" class="language-java line-numbers"><code class="language-java">Supplier<span class="token generics function"><span class="token punctuation">&lt;</span>DoubleStream<span class="token punctuation">></span></span> totalStream <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token function">saleStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">mapToDouble</span><span class="token punctuation">(</span>Sale<span class="token operator">:</span><span class="token operator">:</span>total<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">boolean</span> bigSaleDay <span class="token operator">=</span> totalStream<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">anyMatch</span><span class="token punctuation">(</span>total <span class="token operator">-</span><span class="token operator">></span> total <span class="token operator">></span> <span class="token number">100.00</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
 <ul>
 <li>Intermediate operations when called on a stream returns a stream.</li>
 <li>Use <code class="language-text">flatMap()</code> to flatten a collection of stream before operating on it and outputs a concatenation of all those streams.</li>
 <li>In the code below, assume <code class="language-text">saleStream()</code> produces a stream of sales and every sale has a list of items. <code class="language-text">map</code> returns a Stream of Streams, while <code class="language-text">flatMap</code> flattens all those streams and concatinates them into a single stream.</li>
 </ul>
-<p><div id="gist93453226" class="gist">
-    <div class="gist-file">
-      <div class="gist-data">
-        <div class="js-gist-file-update-container js-task-list-container file-box">
-  <div id="file-supplier-java" class="file">
-    
-
-  <div itemprop="text" class="blob-wrapper data type-java ">
-      
-<table class="highlight tab-size js-file-line-container" data-tab-size="8">
-      <tr>
-        <td id="file-supplier-java-L1" class="blob-num js-line-number" data-line-number="1"></td>
-        <td id="file-supplier-java-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">Supplier&lt;<span class="pl-smi">DoubleStream</span>&gt;</span> totalStream <span class="pl-k">=</span> () <span class="pl-k">-</span><span class="pl-k">&gt;</span> saleStream()<span class="pl-k">.</span>mapToDouble(<span class="pl-smi">Sale</span><span class="pl-k">::</span>total);</td>
-      </tr>
-      <tr>
-        <td id="file-supplier-java-L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="file-supplier-java-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-k">boolean</span> bigSaleDay <span class="pl-k">=</span> totalStream<span class="pl-k">.</span>get()<span class="pl-k">.</span>anyMatch(total <span class="pl-k">-</span><span class="pl-k">&gt;</span> total <span class="pl-k">&gt;</span> <span class="pl-c1">100.00</span>);</td>
-      </tr>
-</table>
-
-
-  </div>
-
-  </div>
-</div>
-
-      </div>
-      <div class="gist-meta">
-        <a href="https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/Supplier.java" style="float:right">view raw</a>
-        <a href="https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522#file-supplier-java">Supplier.java</a>
-        hosted with &#10084; by <a href="https://github.com">GitHub</a>
-      </div>
-    </div>
-</div>
-</p>
+<div class="gatsby-code-title">MapAndFlatMap.java</div>
+<div class="gatsby-highlight" data-language="java"><pre style="counter-reset: linenumber NaN" class="language-java line-numbers"><code class="language-java">Stream<span class="token operator">&lt;</span>Stream<span class="token generics function"><span class="token punctuation">&lt;</span>Item<span class="token punctuation">></span></span><span class="token operator">></span> itemStream1 <span class="token operator">=</span> <span class="token function">saleStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>sale <span class="token operator">-</span><span class="token operator">></span> sale<span class="token punctuation">.</span>items<span class="token punctuation">.</span><span class="token function">stream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Stream<span class="token generics function"><span class="token punctuation">&lt;</span>Item<span class="token punctuation">></span></span> itemStream2 <span class="token operator">=</span> <span class="token function">saleStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">flatMap</span><span class="token punctuation">(</span>sale <span class="token operator">-</span><span class="token operator">></span> sale<span class="token punctuation">.</span>items<span class="token punctuation">.</span><span class="token function">stream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
 <ul>
 <li><code class="language-text">collect()</code> to collect the out-coming stream to a desired data structure like List. It also has interesting functions like <code class="language-text">groupBy</code> and <code class="language-text">groupByConcurrent</code>, <code class="language-text">summarizingDoubles</code> etc. This is called <strong>fold</strong> in FP terms, which summarizes bunch of values into one.</li>
 <li><code class="language-text">Stream.generate(supplier)</code> can generate an infinite stream of objects, but it needs to be used along with a Short-Circuiting operator like <code class="language-text">limit()</code>. The below code generates sale objects supplied by the <code class="language-text">Supplier</code>, limited by the quantity passed.</li>
 </ul>
-<p><div id="gist93453226" class="gist">
-    <div class="gist-file">
-      <div class="gist-data">
-        <div class="js-gist-file-update-container js-task-list-container file-box">
-  <div id="file-infinitestream-java" class="file">
-    
-
-  <div itemprop="text" class="blob-wrapper data type-java ">
-      
-<table class="highlight tab-size js-file-line-container" data-tab-size="8">
-      <tr>
-        <td id="file-infinitestream-java-L1" class="blob-num js-line-number" data-line-number="1"></td>
-        <td id="file-infinitestream-java-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">Supplier&lt;<span class="pl-smi">Sale</span>&gt;</span> supplier <span class="pl-k">=</span> () <span class="pl-k">-</span><span class="pl-k">&gt;</span> <span class="pl-k">new</span> <span class="pl-smi">Sale</span>(<span class="pl-c1">...</span>);</td>
-      </tr>
-      <tr>
-        <td id="file-infinitestream-java-L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="file-infinitestream-java-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-k">return</span> <span class="pl-smi">Stream</span><span class="pl-k">.</span>generate(supplier)<span class="pl-k">.</span>limit(quantity);</td>
-      </tr>
-</table>
-
-
-  </div>
-
-  </div>
-</div>
-
-      </div>
-      <div class="gist-meta">
-        <a href="https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522/raw/425c47d097b9f7f516febb72df60d8dcce8546c4/InfiniteStream.java" style="float:right">view raw</a>
-        <a href="https://gist.github.com/overfullstack/d5809d7bf15d7e1a34c289f9b2ff6522#file-infinitestream-java">InfiniteStream.java</a>
-        hosted with &#10084; by <a href="https://github.com">GitHub</a>
-      </div>
-    </div>
-</div>
-</p>
+<div class="gatsby-code-title">InfiniteStream.java</div>
+<div class="gatsby-highlight" data-language="java"><pre style="counter-reset: linenumber NaN" class="language-java line-numbers"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> Supplier<span class="token generics function"><span class="token punctuation">&lt;</span>Sale<span class="token punctuation">></span></span> supplier <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token keyword">new</span> <span class="token class-name">Sale</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">return</span> Stream<span class="token punctuation">.</span><span class="token function">generate</span><span class="token punctuation">(</span>supplier<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">limit</span><span class="token punctuation">(</span>quantity<span class="token punctuation">)</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
 <ul>
 <li><strong>ParallelStreams</strong> are a great way to span work onto multiple threads, when order of processing is not of a concern.</li>
 <li><code class="language-text">Optional</code> is preferred over traditional null checking with <code class="language-text">isPresent()</code> which is more intuative. Since passing optionals around methods avoids presence of NULLs, there won’t be any restlessness about NPE. Note, you still need to check <code class="language-text">isPresent()</code>, so it’s not a total replacement to avoid checking, it just makes it error free. According to the documentation, Optional should be used as a return type. And that’s all. It’s a neat solution for handling data that might be not present.</li>
@@ -454,4 +176,4 @@ For example, if we have to design a system that deals with <strong>People</stron
     ga('create', 'UA-73379983-2', 'auto', {});
       
       }
-      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-post-template-jsx","jsonName":"posts-functional-programming-with-java-8-bba","path":"/posts/functional-programming-with-java-8/"};window.dataPath="886/path---posts-functional-programming-with-java-8-bba-c6b-bDznzHJxSl3VwTr4jXIyos3M";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app.3d40c08e8e030c91a677.css","/app-788fc88ef2982be3cad1.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-b789947895ccc545b67d.js"],"component---src-templates-page-template-jsx":["/component---src-templates-page-template-jsx.cef2f1007f8c0e420ece.css","/component---src-templates-page-template-jsx-476765fe543b32bac5c7.js"],"component---src-templates-post-template-jsx":["/component---src-templates-post-template-jsx.50a1484896813f95e1e4.css","/component---src-templates-post-template-jsx-04a963aa70587069973f.js"],"component---src-templates-tag-template-jsx":["/component---src-templates-tag-template-jsx.02ad212d20d330149832.css","/component---src-templates-tag-template-jsx-cb98f008931d060f0898.js"],"component---src-templates-category-template-jsx":["/component---src-templates-category-template-jsx.8a7cbdf6ca49595d41ac.css","/component---src-templates-category-template-jsx-45253775b616ae1f3c76.js"],"component---src-pages-404-jsx":["/component---src-pages-404-jsx.6e5748f6cf73142accaf.css","/component---src-pages-404-jsx-9c24d22d3fa56737d791.js"],"component---src-pages-categories-jsx":["/component---src-pages-categories-jsx.6e5748f6cf73142accaf.css","/component---src-pages-categories-jsx-701b7bfbd4c8a17642bf.js"],"component---src-pages-index-jsx":["/component---src-pages-index-jsx.5956334439102a8232a9.css","/component---src-pages-index-jsx-b33004fe53198706c30f.js"],"component---src-pages-tags-jsx":["/component---src-pages-tags-jsx.6e5748f6cf73142accaf.css","/component---src-pages-tags-jsx-0d132ac35fe67d718cc5.js"],"pages-manifest":["/pages-manifest-698e082d607d80b944b7.js"]};/*]]>*/</script><script src="/component---src-templates-post-template-jsx-04a963aa70587069973f.js" async=""></script><script src="/1-8b3d1493ef6569eba195.js" async=""></script><script src="/15-7e341543e58663e69225.js" async=""></script><script src="/2-4bf80ab6bb5b81b1d068.js" async=""></script><script src="/0-96dab5576f25e5c135fa.js" async=""></script><script src="/app-788fc88ef2982be3cad1.js" async=""></script><script src="/webpack-runtime-22c7c7b99dcbddb14cb7.js" async=""></script></body></html>
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-post-template-jsx","jsonName":"posts-functional-programming-with-java-8-bba","path":"/posts/functional-programming-with-java-8/"};window.dataPath="419/path---posts-functional-programming-with-java-8-bba-c6b-GEmhpnSn2rKR9GY28tMkKRFqg";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app.3d40c08e8e030c91a677.css","/app-788fc88ef2982be3cad1.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-b789947895ccc545b67d.js"],"component---src-templates-page-template-jsx":["/component---src-templates-page-template-jsx.cef2f1007f8c0e420ece.css","/component---src-templates-page-template-jsx-476765fe543b32bac5c7.js"],"component---src-templates-post-template-jsx":["/component---src-templates-post-template-jsx.50a1484896813f95e1e4.css","/component---src-templates-post-template-jsx-04a963aa70587069973f.js"],"component---src-templates-tag-template-jsx":["/component---src-templates-tag-template-jsx.02ad212d20d330149832.css","/component---src-templates-tag-template-jsx-cb98f008931d060f0898.js"],"component---src-templates-category-template-jsx":["/component---src-templates-category-template-jsx.8a7cbdf6ca49595d41ac.css","/component---src-templates-category-template-jsx-45253775b616ae1f3c76.js"],"component---src-pages-404-jsx":["/component---src-pages-404-jsx.6e5748f6cf73142accaf.css","/component---src-pages-404-jsx-9c24d22d3fa56737d791.js"],"component---src-pages-categories-jsx":["/component---src-pages-categories-jsx.6e5748f6cf73142accaf.css","/component---src-pages-categories-jsx-701b7bfbd4c8a17642bf.js"],"component---src-pages-index-jsx":["/component---src-pages-index-jsx.5956334439102a8232a9.css","/component---src-pages-index-jsx-b33004fe53198706c30f.js"],"component---src-pages-tags-jsx":["/component---src-pages-tags-jsx.6e5748f6cf73142accaf.css","/component---src-pages-tags-jsx-0d132ac35fe67d718cc5.js"],"pages-manifest":["/pages-manifest-6810844b08c0bc32c641.js"]};/*]]>*/</script><script src="/component---src-templates-post-template-jsx-04a963aa70587069973f.js" async=""></script><script src="/1-8b3d1493ef6569eba195.js" async=""></script><script src="/15-7e341543e58663e69225.js" async=""></script><script src="/2-4bf80ab6bb5b81b1d068.js" async=""></script><script src="/0-96dab5576f25e5c135fa.js" async=""></script><script src="/app-788fc88ef2982be3cad1.js" async=""></script><script src="/webpack-runtime-a161f13b8aa8b033df42.js" async=""></script></body></html>
