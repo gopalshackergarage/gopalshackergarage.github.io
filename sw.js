@@ -26,35 +26,36 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-567d0fd5039deedb9d4e.js"
+    "url": "webpack-runtime-266460f15a4e78354f89.js"
   },
   {
-    "url": "styles.1992ae46fe5c6f2fd860.css"
+    "url": "styles.9a5e73968badf5f0f5fe.css"
   },
   {
-    "url": "styles-a9869ec2ca9d0fa3bd7f.js"
+    "url": "styles-b3796c0a4dd85aeb8968.js"
   },
   {
-    "url": "app-e9027e8a3ee8d4d95c11.js"
+    "url": "app-a469bcf6a5b42a1f94e8.js"
   },
   {
-    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-91362a6f247aa00ba9e3.js"
+    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-0545a93a0cffdb5c38b4.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "c1f8ba5099a8d41fbad655d369a83074"
+    "revision": "02be5abd03519b2b3d83c495a6b19ccf"
   },
   {
-    "url": "1-36ac7d50875daa0c930a.js"
+    "url": "1-71b5caa86c8de24e4272.js"
   },
   {
-    "url": "2-eeb5af14b2025204d8df.js"
+    "url": "2-6a641a88a75fdf0aa279.js"
   },
   {
-    "url": "component---src-pages-404-jsx-1c8b4306c8d845988fa6.js"
+    "url": "component---src-pages-404-jsx-a3a114b0303db67c40c2.js"
   },
   {
-    "url": "static/d/224/path---404-html-516-62a-YX5pCnfN61BIVRgwJfGZ93iNEE.json"
+    "url": "page-data/404.html/page-data.json",
+    "revision": "a0ddda83d0ebf9491dc312ecf2d5dd79"
   },
   {
     "url": "manifest.webmanifest",
@@ -65,6 +66,7 @@ workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(/(\.js$|\.css$|static\/)/, workbox.strategies.cacheFirst(), 'GET');
+workbox.routing.registerRoute(/^https?:.*\page-data\/.*\/page-data\.json/, workbox.strategies.networkFirst(), 'GET');
 workbox.routing.registerRoute(/^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/, workbox.strategies.staleWhileRevalidate(), 'GET');
 workbox.routing.registerRoute(/^https?:\/\/fonts\.googleapis\.com\/css/, workbox.strategies.staleWhileRevalidate(), 'GET');
 
