@@ -377,7 +377,7 @@
 <li>Now every function can speak the same language, by passing around these Monad boxes and operate on them with functions, without worrying much about what it contains. Uniform boxes with Heterogenous data.</li>
 <li>Like, validation functions can ship either a goodEgg or a validation failure to the orchestration function by wrapping them in a Monad box, and it doesn’t even care what’s in the box. </li>
 <li>Now, Orchestrator only has one job to do, just pump the data inside the pipeline ahead to the next validation function.</li>
-<li>Plus, you just got something for free, <strong>Context Abstraction</strong>. Notice, the algo depends on the Monad type and not the parameter type contained in it. Wow! an epiphany!!
+<li>Plus, you just got something for free, <strong>Context Abstraction</strong>. Think about it, the algo depends on the Monad type and not the parameter type contained in it. Wow! an epiphany!!
 <img class="post-gif" src="/wow-31d054147c2d434c1168d75e79fae00b.gif"></li>
 <li>Now, both the Parameter type and Algorithm are cleanly separate, and algo can be reused on multiple parameter types, which solves our last problem.</li>
 </ul>
@@ -385,6 +385,7 @@
 <p>Now you see it? Now you don’t?
 <img class="post-gif" src="/now-you-see-me-2b2e69d9edc48c7d5da92f5031eb048a.gif"></p>
 <ul>
+<li>This blog post is already too long and so I left the part on how these problems are solved with Monads for the sequel.</li>
 <li>Chances are you already worked with lot of Monads, if you started adapting Java 8 or above.</li>
 <li>Java guys took 3 years between Java 7 and 8 and packed Java 8 with bunch of functional toys, and alongside came some Monads like Optional, Stream etc.,.</li>
 </ul>
