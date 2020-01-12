@@ -27,36 +27,36 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-529252b8b94b7bf4adde.js"
+    "url": "webpack-runtime-b591ec3b53e22212ea16.js"
   },
   {
-    "url": "styles.dcdfb0cf1d2b318b9826.css"
+    "url": "styles.0e23bbc4ff8b63c7e02c.css"
   },
   {
     "url": "styles-9d2438f4bbd449edbca2.js"
   },
   {
-    "url": "commons-4c40fcb49a70fcb89f61.js"
+    "url": "commons-4db89fbdf630557c3ed5.js"
   },
   {
-    "url": "app-414403602ddfb50d1702.js"
+    "url": "app-71e091d69de3518d618a.js"
   },
   {
-    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-29e327e8790fcc937b11.js"
+    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-1d9b46fa5d1abe87c6c2.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "133ef69a51571316529aa96a7f59b1ae"
+    "revision": "b1dc78d8fdf537cb0bb036964349a3da"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "5c266ca99d65891b4a81d2d61e9c2648"
+    "revision": "0a9bbc42675fd531fc72ec25bcca22f3"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(/(\.js$|\.css$|static\/)/, new workbox.strategies.CacheFirst(), 'GET');
-workbox.routing.registerRoute(/^https?:.*\page-data\/.*\/page-data\.json/, new workbox.strategies.NetworkFirst(), 'GET');
+workbox.routing.registerRoute(/^https?:.*\page-data\/.*\/page-data\.json/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
 workbox.routing.registerRoute(/^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
 workbox.routing.registerRoute(/^https?:\/\/fonts\.googleapis\.com\/css/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
 
@@ -99,7 +99,7 @@ function handleAPIRequest({ event }) {
   const params = pathname.match(/:(.+)/)[1]
   const data = {}
 
-  if (params.indexOf(`=`) !== -1) {
+  if (params.includes(`=`)) {
     params.split(`&`).forEach(param => {
       const [key, val] = param.split(`=`)
       data[key] = val
@@ -143,7 +143,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-414403602ddfb50d1702.js`))) {
+  if (!resources || !(await caches.match(`/app-71e091d69de3518d618a.js`))) {
     return await fetch(event.request)
   }
 
