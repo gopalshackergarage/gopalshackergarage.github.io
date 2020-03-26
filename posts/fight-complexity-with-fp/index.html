@@ -165,7 +165,37 @@
 <h3 id="Testability" style="position:relative;">Testability<a href="#Testability" aria-label="Testability permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
 <p>Individual validation functions are easily testable through unit-tests. The orchestration is completely done using well-tested library functions (by library owners) like <code class="language-text">foldLeft</code>, <code class="language-text">findFirst</code>, etc. So nothing stops the framework from having a <strong>100% code coverage</strong>.</p>
 <h3 id="Complexity" style="position:relative;">Complexity<a href="#Complexity" aria-label="Complexity permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
-<p>Thanks to the monad abstracting away all the branching complexity, our linear code has minimum complexity, which makes it easy to extend, debug and reason about. We can rerun the previous complexity metrics to prove it.</p>
+<p>Thanks to the monad abstracting away all the branching complexity, our linear code has minimum complexity, which makes it easy to extend, debug and reason about. We can rerun the previous complexity metrics to prove it.
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 640px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/accb5ed246b4ab14e4f05bca07c67e6f/9c177/complexity-compare.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 36.25%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsSAAALEgHS3X78AAABRklEQVQozzWQCZKEIAxFvf8NZ+m2FwU3BARERf2T4LRVVGLykvykWPYTMR2Y14R52xHIhiVhoVjcEk4AWuuc/3CROGbTfuDzneeJlBIKM28Qo0fVG1SDxaszeHaaYhPq3mJdNzRSYPQLKuXwJo5zbG1YPt2wbRtCCCgaSj4bhVJ0eMge97rDrb58rQ10P+D5KCGURSkvLjMVWXGx2k7wzmEcRxSapjTaQ1KBVBOpNFkt//t5QQwz6vIBZTwpcznOzZlhMR+OFXrvUdiYIKkhryuoYa14ncsPccF+HGiEgNIB0oTM5dNQw1a7zBkfcRI3zzMKSVNuYsBv1dI6fbb9aLCtMd/EORpWvWmQxV0O+H41ec0f4r7IZ/7VKthpghoGFBMVmIn2NzSJbjEaS0mX5fMLNLVtW2iKM6eJ45vpf5Yf1zHr6I5/oBAULo2Ia6UAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="complexity-compare"
+        title="complexity-compare"
+        src="/static/accb5ed246b4ab14e4f05bca07c67e6f/6af66/complexity-compare.png"
+        srcset="/static/accb5ed246b4ab14e4f05bca07c67e6f/69538/complexity-compare.png 160w,
+/static/accb5ed246b4ab14e4f05bca07c67e6f/72799/complexity-compare.png 320w,
+/static/accb5ed246b4ab14e4f05bca07c67e6f/6af66/complexity-compare.png 640w,
+/static/accb5ed246b4ab14e4f05bca07c67e6f/9c177/complexity-compare.png 880w"
+        sizes="(max-width: 640px) 100vw, 640px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <h2 id="Conclusion" style="position:relative;">Conclusion<a href="#Conclusion" aria-label="Conclusion permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
 <p>Functional Programming is not Complex, but it fights complexity. The solution runs with the same time complexity (no perf impact), but minimum cognitive complexity. The framework is generic and agnostic of programming language and can be consumed by any Service with a similar requirement, with minor modifications.</p>
 <h2 id="My-Talk-on-this" style="position:relative;">My Talk on this<a href="#My-Talk-on-this" aria-label="My Talk on this permalink" class="anchor after"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h2>
