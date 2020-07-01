@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Overfullstack's RSS]]></title><description><![CDATA[So excited about this Craft that, I can't keep myself from blogging about it.]]></description><link>https://overfullstack.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 20 Jun 2020 16:40:08 GMT</lastBuildDate><item><title><![CDATA[Fight Complexity with Functional Programming]]></title><description><![CDATA[Skadooosh!]]></description><link>https://overfullstack.github.io/posts/fight-complexity-with-fp/</link><guid isPermaLink="false">https://overfullstack.github.io/posts/fight-complexity-with-fp/</guid><pubDate>Mon, 23 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;Abstract&quot; style=&quot;position:relative;&quot;&gt;Abstract&lt;a href=&quot;#Abstract&quot; aria-label=&quot;Abstract permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Overfullstack's RSS]]></title><description><![CDATA[So excited about this Craft that, I can't keep myself from blogging about it.]]></description><link>https://overfullstack.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 01 Jul 2020 09:20:57 GMT</lastBuildDate><item><title><![CDATA[Fight Complexity with Functional Programming]]></title><description><![CDATA[Skadooosh!]]></description><link>https://overfullstack.github.io/posts/fight-complexity-with-fp/</link><guid isPermaLink="false">https://overfullstack.github.io/posts/fight-complexity-with-fp/</guid><pubDate>Mon, 23 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;Abstract&quot; style=&quot;position:relative;&quot;&gt;Abstract&lt;a href=&quot;#Abstract&quot; aria-label=&quot;Abstract permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;A Metric-driven approach to reduce Cognitive Complexity in a code base, using Functional Programming, demoed &lt;strong&gt;hands-on&lt;/strong&gt;, by solving a complex real-world ubiquitous design challenge - REST API Bulk Request Validation, with an extensible Framework that separates what-to-do (Validations) from how-to-do (Validation Orchestration). Let’s do a case study of a successful implementation done by our team in the world’s largest SaaS org, &lt;em&gt;Salesforce&lt;/em&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;Audience--Takeaways&quot; style=&quot;position:relative;&quot;&gt;Audience &amp;#x26; Takeaways&lt;a href=&quot;#Audience--Takeaways&quot; aria-label=&quot;Audience  Takeaways permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
@@ -11,7 +11,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;The audience experiences a mind-shift from the traditional mutation-heavy &lt;em&gt;Imperative style&lt;/em&gt; to &lt;em&gt;Functional style&lt;/em&gt; — with Immutable Objects (Using Java 14 preview feature &lt;code class=&quot;language-text&quot;&gt;Records&lt;/code&gt; or Kotlin’s &lt;code class=&quot;language-text&quot;&gt;Data classes&lt;/code&gt;) and Pure-Functions (replacing Mutation with Transformation).&lt;/li&gt;
-&lt;li&gt;With Hands-on demos, this talk adds a robust paradigm tool-set and vocabulary to a programmer’s arsenal and how to apply them to simplify the modelling and designing of complex &lt;em&gt;real-world&lt;/em&gt; problems.&lt;/li&gt;
+&lt;li&gt;With Hands-on demos, this talk adds a robust paradigm tool-set and vocabulary to a programmer’s arsenal and how to apply them to simplify the modeling and designing of complex &lt;em&gt;real-world&lt;/em&gt; problems.&lt;/li&gt;
 &lt;li&gt;The audience learns how to objectively perceive complexity in any codebase through metrics (measured using popular static analysis tools), and how to reduce cognitive complexity methodically.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;Source-Code&quot; style=&quot;position:relative;&quot;&gt;Source-Code&lt;a href=&quot;#Source-Code&quot; aria-label=&quot;Source Code permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
@@ -137,6 +137,7 @@ As pointed, we can compare &lt;a href=&quot;https://github.com/overfullstack/rai
 &lt;h2 id=&quot;My-Talk-on-this&quot; style=&quot;position:relative;&quot;&gt;My Talk on this&lt;a href=&quot;#My-Talk-on-this&quot; aria-label=&quot;My Talk on this permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;This talk was successfully presented and warmly received at:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/DBDTNmLbU2Y&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Berlin Functional Programming Group&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://youtu.be/tnpL1O8kTbM&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JavaBin, Norway&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://youtu.be/uGxx01yYAgk&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Kotlin User Group, Berlin&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://devfest.gdghyderabad.in/speakers.html&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Google Developer Group Devfest 2019&lt;/a&gt;&lt;/li&gt;
@@ -146,9 +147,59 @@ As pointed, we can compare &lt;a href=&quot;https://github.com/overfullstack/rai
 &lt;/ul&gt;
 &lt;p&gt;This talk is also selected for prestigious international conferences:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.jbcnconf.com/2020/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JBCN Conf - 2020&lt;/a&gt;&lt;/strong&gt;, 7-9 September 2020, Barcelona, Spain.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://2020.allthingsopen.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;All Things Open - 2020&lt;/a&gt;&lt;/strong&gt;, 18-20 October, 2020, Raleigh, NC.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.jbcnconf.com/2020/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JBCN Conf - 2020&lt;/a&gt;&lt;/strong&gt;, 7-9 September 2020, Barcelona, Spain (This event got cancelled due to COVID-19).&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&quot;Java-Version&quot; style=&quot;position:relative;&quot;&gt;Java Version&lt;a href=&quot;#Java-Version&quot; aria-label=&quot;Java Version permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;a href=&quot;https://speakerdeck.com/gopalakshintala/fight-complexity-with-functional-programming&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Slide-deck&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Source-code links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://bit.ly/imp-vs-dec&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;imperative-vs-declarative&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bit.ly/ro-validation&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;railway-oriented-validation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;06-2020-Berlin-FP-Group-Germany&quot; style=&quot;position:relative;&quot;&gt;06-2020 (Berlin FP Group, Germany)&lt;a href=&quot;#06-2020-Berlin-FP-Group-Germany&quot; aria-label=&quot;06 2020 Berlin FP Group Germany permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;
+        &lt;div class=&quot;embedVideo-container&quot;&gt;
+            &lt;iframe
+              title=&quot;&quot;
+              width=&quot;640&quot;
+              height=&quot;362&quot;
+              src=&quot;https://www.youtube.com/embed/DBDTNmLbU2Y?rel=0&quot;
+              class=&quot;embedVideo-iframe&quot;
+              style=&quot;border:0&quot;
+              allowfullscreen
+            &gt;&lt;/iframe&gt;
+        &lt;/div&gt;&lt;/p&gt;
+&lt;h4 id=&quot;05-2020-JavaBin-Norway&quot; style=&quot;position:relative;&quot;&gt;05-2020 (JavaBin, Norway)&lt;a href=&quot;#05-2020-JavaBin-Norway&quot; aria-label=&quot;05 2020 JavaBin Norway permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;
+        &lt;div class=&quot;embedVideo-container&quot;&gt;
+            &lt;iframe
+              title=&quot;&quot;
+              width=&quot;640&quot;
+              height=&quot;362&quot;
+              src=&quot;https://www.youtube.com/embed/tnpL1O8kTbM?rel=0&quot;
+              class=&quot;embedVideo-iframe&quot;
+              style=&quot;border:0&quot;
+              allowfullscreen
+            &gt;&lt;/iframe&gt;
+        &lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&quot;08-2019-Salesforce-Hyderabad&quot; style=&quot;position:relative;&quot;&gt;08-2019 (Salesforce, Hyderabad)&lt;a href=&quot;#08-2019-Salesforce-Hyderabad&quot; aria-label=&quot;08 2019 Salesforce Hyderabad permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;
+        &lt;div class=&quot;embedVideo-container&quot;&gt;
+            &lt;iframe
+              title=&quot;&quot;
+              width=&quot;640&quot;
+              height=&quot;362&quot;
+              src=&quot;https://www.youtube.com/embed/l9jJ7m7_VpM?rel=0&quot;
+              class=&quot;embedVideo-iframe&quot;
+              style=&quot;border:0&quot;
+              allowfullscreen
+            &gt;&lt;/iframe&gt;
+        &lt;/div&gt;&lt;/p&gt;
 &lt;h3 id=&quot;Kotlin-Version&quot; style=&quot;position:relative;&quot;&gt;Kotlin Version&lt;a href=&quot;#Kotlin-Version&quot; aria-label=&quot;Kotlin Version permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;The &lt;a href=&quot;https://speakerdeck.com/gopalakshintala/fight-complexity-with-functional-programming-31a15b3d-878e-4b59-94d4-a706c23caadf&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Slide-deck&lt;/a&gt;&lt;/li&gt;
@@ -181,43 +232,6 @@ As pointed, we can compare &lt;a href=&quot;https://github.com/overfullstack/rai
               width=&quot;640&quot;
               height=&quot;362&quot;
               src=&quot;https://www.youtube.com/embed/LGABy9qdB44?rel=0&quot;
-              class=&quot;embedVideo-iframe&quot;
-              style=&quot;border:0&quot;
-              allowfullscreen
-            &gt;&lt;/iframe&gt;
-        &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Java-Version&quot; style=&quot;position:relative;&quot;&gt;Java Version&lt;a href=&quot;#Java-Version&quot; aria-label=&quot;Java Version permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The &lt;a href=&quot;https://speakerdeck.com/gopalakshintala/fight-complexity-with-functional-programming&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Slide-deck&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Source-code links:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://bit.ly/imp-vs-dec&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;imperative-vs-declarative&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://bit.ly/ro-validation&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;railway-oriented-validation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;05-2020-JavaBin-Norway&quot; style=&quot;position:relative;&quot;&gt;05-2020 (JavaBin, Norway)&lt;a href=&quot;#05-2020-JavaBin-Norway&quot; aria-label=&quot;05 2020 JavaBin Norway permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;
-        &lt;div class=&quot;embedVideo-container&quot;&gt;
-            &lt;iframe
-              title=&quot;&quot;
-              width=&quot;640&quot;
-              height=&quot;362&quot;
-              src=&quot;https://www.youtube.com/embed/tnpL1O8kTbM?rel=0&quot;
-              class=&quot;embedVideo-iframe&quot;
-              style=&quot;border:0&quot;
-              allowfullscreen
-            &gt;&lt;/iframe&gt;
-        &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&quot;08-2019-Salesforce-Hyderabad&quot; style=&quot;position:relative;&quot;&gt;08-2019 (Salesforce, Hyderabad)&lt;a href=&quot;#08-2019-Salesforce-Hyderabad&quot; aria-label=&quot;08 2019 Salesforce Hyderabad permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;
-        &lt;div class=&quot;embedVideo-container&quot;&gt;
-            &lt;iframe
-              title=&quot;&quot;
-              width=&quot;640&quot;
-              height=&quot;362&quot;
-              src=&quot;https://www.youtube.com/embed/l9jJ7m7_VpM?rel=0&quot;
               class=&quot;embedVideo-iframe&quot;
               style=&quot;border:0&quot;
               allowfullscreen
