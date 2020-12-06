@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Overfullstack's RSS]]></title><description><![CDATA[So excited about this Craft that, I can't keep myself from blogging about it.]]></description><link>https://overfullstack.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 24 Oct 2020 10:05:19 GMT</lastBuildDate><item><title><![CDATA[Fight Complexity with Functional Programming]]></title><description><![CDATA[Skadooosh!]]></description><link>https://overfullstack.github.io/posts/fight-complexity-with-fp/</link><guid isPermaLink="false">https://overfullstack.github.io/posts/fight-complexity-with-fp/</guid><pubDate>Mon, 23 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;Abstract&quot; style=&quot;position:relative;&quot;&gt;Abstract&lt;a href=&quot;#Abstract&quot; aria-label=&quot;Abstract permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Overfullstack's RSS]]></title><description><![CDATA[So excited about this Craft that, I can't keep myself from blogging about it.]]></description><link>https://overfullstack.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 06 Dec 2020 01:05:39 GMT</lastBuildDate><item><title><![CDATA[Fight Complexity with Functional Programming]]></title><description><![CDATA[Skadooosh!]]></description><link>https://overfullstack.github.io/posts/fight-complexity-with-fp/</link><guid isPermaLink="false">https://overfullstack.github.io/posts/fight-complexity-with-fp/</guid><pubDate>Mon, 23 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;Abstract&quot; style=&quot;position:relative;&quot;&gt;Abstract&lt;a href=&quot;#Abstract&quot; aria-label=&quot;Abstract permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;A Metric-driven approach to reduce Cognitive Complexity in a code base, using Functional Programming, demoed &lt;strong&gt;hands-on&lt;/strong&gt;, by solving a complex real-world ubiquitous design challenge - REST API Bulk Request Validation, with an extensible Framework that separates what-to-do (Validations) from how-to-do (Validation Orchestration). Let’s do a case study of a successful implementation done by our team in the world’s largest SaaS org, &lt;em&gt;Salesforce&lt;/em&gt;, through our in-house baked FOSS library &lt;strong&gt;Vader&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;Audience--Takeaways&quot; style=&quot;position:relative;&quot;&gt;Audience &amp;#x26; Takeaways&lt;a href=&quot;#Audience--Takeaways&quot; aria-label=&quot;Audience  Takeaways permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
@@ -116,7 +116,7 @@
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 36.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsSAAALEgHS3X78AAABRklEQVQozzWQCZKEIAxFvf8NZ+m2FwU3BARERf2T4LRVVGLykvykWPYTMR2Y14R52xHIhiVhoVjcEk4AWuuc/3CROGbTfuDzneeJlBIKM28Qo0fVG1SDxaszeHaaYhPq3mJdNzRSYPQLKuXwJo5zbG1YPt2wbRtCCCgaSj4bhVJ0eMge97rDrb58rQ10P+D5KCGURSkvLjMVWXGx2k7wzmEcRxSapjTaQ1KBVBOpNFkt//t5QQwz6vIBZTwpcznOzZlhMR+OFXrvUdiYIKkhryuoYa14ncsPccF+HGiEgNIB0oTM5dNQw1a7zBkfcRI3zzMKSVNuYsBv1dI6fbb9aLCtMd/EORpWvWmQxV0O+H41ec0f4r7IZ/7VKthpghoGFBMVmIn2NzSJbjEaS0mX5fMLNLVtW2iKM6eJ45vpf5Yf1zHr6I5/oBAULo2Ia6UAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 36.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABO0lEQVQozz2Q23KDMAxE+f9/bGnAGBvwHRsaCFvJJPXMjh50LGm32Z9PHOeJ1+uFk+rzOGq9rquKX4oRuWzEMXNz/Od8/2PswzdhPyFdRjcH9EvEYwpotYe0CcMc6wI1SrhyQNhM/bvHfCy/+LyDuFIKGu1XiNmh16bqoZaqfrJwziNa6vUdlI3o9M11yuBnXCCIGWaLmFbknOG9R7PEArHQddrWIQ9lqhiOa0byAd13i8kl9LOvXKdvjvm+cgXbVhBCQBPJsg4F0kSMbJNqT3YE2S/7s+aixABLsag3xwz3p5Cr/ZB3Mn3R0O223NK2Vs51K1uZbcBOTc6ErchB0DLKly77GqbKfg23mJcUWVpXWGvR2JCgDAU9GajFYaBqXKiDVoJYo5S0xEP/cxYjZScoT+a1oYEp1Qz/AOSyFER2Yfi0AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -150,9 +150,71 @@ As pointed, we can compare &lt;a href=&quot;https://github.com/overfullstack/rai
 &lt;/ul&gt;
 &lt;p&gt;This talk is also selected for prestigious international conferences:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://2020.allthingsopen.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;All Things Open - 2020&lt;/a&gt;&lt;/strong&gt;, 18-20 October, 2020, Raleigh, NC.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.jbcnconf.com/2020/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JBCN Conf - 2020&lt;/a&gt;&lt;/strong&gt;, 7-9 September 2020, Barcelona, Spain (This event got cancelled due to COVID-19).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.jbcnconf.com/2020/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JBCN Conf - 2020&lt;/a&gt;&lt;/strong&gt;, September 2020, Barcelona, Spain (This event got cancelled due to COVID-19).&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&quot;Kotlin-Version&quot; style=&quot;position:relative;&quot;&gt;Kotlin Version&lt;a href=&quot;#Kotlin-Version&quot; aria-label=&quot;Kotlin Version permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;a href=&quot;http://bit.ly/fcwfp-kt-slides&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Slide-deck&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Source-code links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://bit.ly/imp-vs-dec&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;imperative-vs-declarative&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bit.ly/ro-validation-kt&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;railway-oriented-validation-kotlin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;10-2020-All-Things-Open-Raleigh-USA&quot; style=&quot;position:relative;&quot;&gt;10-2020 (All Things Open, Raleigh, USA)&lt;a href=&quot;#10-2020-All-Things-Open-Raleigh-USA&quot; aria-label=&quot;10 2020 All Things Open Raleigh USA permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;
+        &lt;div class=&quot;embedVideo-container&quot;&gt;
+            &lt;iframe
+              title=&quot;&quot;
+              width=&quot;640&quot;
+              height=&quot;362&quot;
+              src=&quot;https://www.youtube.com/embed/Dvr6gx4XaD8?rel=0&quot;
+              class=&quot;embedVideo-iframe&quot;
+              style=&quot;border:0&quot;
+              allowfullscreen
+            &gt;&lt;/iframe&gt;
+        &lt;/div&gt;&lt;/p&gt;
+&lt;h4 id=&quot;09-2020-Kotlin-User-Group-London&quot; style=&quot;position:relative;&quot;&gt;09-2020 (Kotlin User Group, London)&lt;a href=&quot;#09-2020-Kotlin-User-Group-London&quot; aria-label=&quot;09 2020 Kotlin User Group London permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;
+        &lt;div class=&quot;embedVideo-container&quot;&gt;
+            &lt;iframe
+              title=&quot;&quot;
+              width=&quot;640&quot;
+              height=&quot;362&quot;
+              src=&quot;https://www.youtube.com/embed/QVuMSsIUw6M?rel=0&quot;
+              class=&quot;embedVideo-iframe&quot;
+              style=&quot;border:0&quot;
+              allowfullscreen
+            &gt;&lt;/iframe&gt;
+        &lt;/div&gt;&lt;/p&gt;
+&lt;h4 id=&quot;04-2020-Kotlin-User-Group-Berlin&quot; style=&quot;position:relative;&quot;&gt;04-2020 (Kotlin User Group, Berlin)&lt;a href=&quot;#04-2020-Kotlin-User-Group-Berlin&quot; aria-label=&quot;04 2020 Kotlin User Group Berlin permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;
+        &lt;div class=&quot;embedVideo-container&quot;&gt;
+            &lt;iframe
+              title=&quot;&quot;
+              width=&quot;640&quot;
+              height=&quot;362&quot;
+              src=&quot;https://www.youtube.com/embed/uGxx01yYAgk?rel=0&quot;
+              class=&quot;embedVideo-iframe&quot;
+              style=&quot;border:0&quot;
+              allowfullscreen
+            &gt;&lt;/iframe&gt;
+        &lt;/div&gt;&lt;/p&gt;
+&lt;h4 id=&quot;05-2020-Kotlin-User-Group-Hyderabad&quot; style=&quot;position:relative;&quot;&gt;05-2020 (Kotlin User Group, Hyderabad)&lt;a href=&quot;#05-2020-Kotlin-User-Group-Hyderabad&quot; aria-label=&quot;05 2020 Kotlin User Group Hyderabad permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;
+        &lt;div class=&quot;embedVideo-container&quot;&gt;
+            &lt;iframe
+              title=&quot;&quot;
+              width=&quot;640&quot;
+              height=&quot;362&quot;
+              src=&quot;https://www.youtube.com/embed/LGABy9qdB44?rel=0&quot;
+              class=&quot;embedVideo-iframe&quot;
+              style=&quot;border:0&quot;
+              allowfullscreen
+            &gt;&lt;/iframe&gt;
+        &lt;/div&gt;&lt;/p&gt;
 &lt;h3 id=&quot;Java-Version&quot; style=&quot;position:relative;&quot;&gt;Java Version&lt;a href=&quot;#Java-Version&quot; aria-label=&quot;Java Version permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;The &lt;a href=&quot;http://bit.ly/fcwfp-slides&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Slide-deck&lt;/a&gt;&lt;/li&gt;
@@ -198,56 +260,6 @@ As pointed, we can compare &lt;a href=&quot;https://github.com/overfullstack/rai
               width=&quot;640&quot;
               height=&quot;362&quot;
               src=&quot;https://www.youtube.com/embed/l9jJ7m7_VpM?rel=0&quot;
-              class=&quot;embedVideo-iframe&quot;
-              style=&quot;border:0&quot;
-              allowfullscreen
-            &gt;&lt;/iframe&gt;
-        &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Kotlin-Version&quot; style=&quot;position:relative;&quot;&gt;Kotlin Version&lt;a href=&quot;#Kotlin-Version&quot; aria-label=&quot;Kotlin Version permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The &lt;a href=&quot;http://bit.ly/fcwfp-kt-slides&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Slide-deck&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Source-code links:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://bit.ly/imp-vs-dec&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;imperative-vs-declarative&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://bit.ly/ro-validation-kt&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;railway-oriented-validation-kotlin&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;09-2020-Kotlin-User-Group-London&quot; style=&quot;position:relative;&quot;&gt;09-2020 (Kotlin User Group, London)&lt;a href=&quot;#09-2020-Kotlin-User-Group-London&quot; aria-label=&quot;09 2020 Kotlin User Group London permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;
-        &lt;div class=&quot;embedVideo-container&quot;&gt;
-            &lt;iframe
-              title=&quot;&quot;
-              width=&quot;640&quot;
-              height=&quot;362&quot;
-              src=&quot;https://www.youtube.com/embed/QVuMSsIUw6M?rel=0&quot;
-              class=&quot;embedVideo-iframe&quot;
-              style=&quot;border:0&quot;
-              allowfullscreen
-            &gt;&lt;/iframe&gt;
-        &lt;/div&gt;&lt;/p&gt;
-&lt;h4 id=&quot;04-2020-Kotlin-User-Group-Berlin&quot; style=&quot;position:relative;&quot;&gt;04-2020 (Kotlin User Group, Berlin)&lt;a href=&quot;#04-2020-Kotlin-User-Group-Berlin&quot; aria-label=&quot;04 2020 Kotlin User Group Berlin permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;
-        &lt;div class=&quot;embedVideo-container&quot;&gt;
-            &lt;iframe
-              title=&quot;&quot;
-              width=&quot;640&quot;
-              height=&quot;362&quot;
-              src=&quot;https://www.youtube.com/embed/uGxx01yYAgk?rel=0&quot;
-              class=&quot;embedVideo-iframe&quot;
-              style=&quot;border:0&quot;
-              allowfullscreen
-            &gt;&lt;/iframe&gt;
-        &lt;/div&gt;&lt;/p&gt;
-&lt;h4 id=&quot;05-2020-Kotlin-User-Group-Hyderabad&quot; style=&quot;position:relative;&quot;&gt;05-2020 (Kotlin User Group, Hyderabad)&lt;a href=&quot;#05-2020-Kotlin-User-Group-Hyderabad&quot; aria-label=&quot;05 2020 Kotlin User Group Hyderabad permalink&quot; class=&quot;anchor after&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;
-        &lt;div class=&quot;embedVideo-container&quot;&gt;
-            &lt;iframe
-              title=&quot;&quot;
-              width=&quot;640&quot;
-              height=&quot;362&quot;
-              src=&quot;https://www.youtube.com/embed/LGABy9qdB44?rel=0&quot;
               class=&quot;embedVideo-iframe&quot;
               style=&quot;border:0&quot;
               allowfullscreen
